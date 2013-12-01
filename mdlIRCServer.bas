@@ -251,10 +251,10 @@ If lSettings.sHandleErrors = True Then On Local Error Resume Next
 Dim User As clsIRCServer_User
 Set User = Users(Index)
 GetWelcome = ":" & ServerName & " 001 " & User.Nick & " :Welcome to the Team Nexgen IRC Network " & User.Nick & "!" & User.ID & vbCrLf
-GetWelcome = GetWelcome & ":" & ServerName & " 002 " & User.Nick & " :Your server is " & ServerName & ", running version NexIRC v" & App.Major & "." & App.Minor & "." & App.Revision & vbCrLf
+GetWelcome = GetWelcome & ":" & ServerName & " 002 " & User.Nick & " :Your server is " & ServerName & ", running version nexIRC v" & App.Major & "." & App.Minor & "." & App.Revision & vbCrLf
 GetWelcome = GetWelcome & ":" & ServerName & " 003 " & User.Nick & " :This server was created on Wednesday July 28th" & vbCrLf
-GetWelcome = GetWelcome & ":" & ServerName & " 004 " & User.Nick & " " & ServerName & " NexIRC" & vbCrLf
-GetWelcome = GetWelcome & ":" & ServerName & " 005 " & User.Nick & " SAFELIST NICKLEN=" & Nicklen & " CHANTYPES=# CHANMODES=beI,k,l,imnpst MAXCHANNELS=" & MaxJoinChannels & " MAXBANS=1 NETWORK=NexIRC EXCEPTS=e INVEX=I CASEMAPPING=ascii TOPICLEN=" & TopicLen & " KICKLEN=" & KickLen & " CHARSET=UTF-8 :are available on this server" & vbCrLf
+GetWelcome = GetWelcome & ":" & ServerName & " 004 " & User.Nick & " " & ServerName & " nexIRC" & vbCrLf
+GetWelcome = GetWelcome & ":" & ServerName & " 005 " & User.Nick & " SAFELIST NICKLEN=" & Nicklen & " CHANTYPES=# CHANMODES=beI,k,l,imnpst MAXCHANNELS=" & MaxJoinChannels & " MAXBANS=1 NETWORK=nexIRC EXCEPTS=e INVEX=I CASEMAPPING=ascii TOPICLEN=" & TopicLen & " KICKLEN=" & KickLen & " CHARSET=UTF-8 :are available on this server" & vbCrLf
 End Function
 
 Public Function GetRand() As Long
@@ -308,12 +308,12 @@ strData = strData & Space(Size - Len(strData))
 SizeString = strData
 End Function
 
-Public Sub Rehash(Optional Nick As String = "NexIRC.MN.org")
+Public Sub Rehash(Optional Nick As String = "nexIRC.MN.org")
 If lSettings.sHandleErrors = True Then On Local Error Resume Next
 Dim dB As New clsDatabase, i As Long, Kline As String
 dB.FileName = App.Path & "\data\config\server\server.ini"
-ServerName = dB.ReadEntry("Settings", "Servername", "NexIRC.MN.org")
-ServerDesc = dB.ReadEntry("Settings", "Description", "NexIRC Server")
+ServerName = dB.ReadEntry("Settings", "Servername", "nexIRC.MN.org")
+ServerDesc = dB.ReadEntry("Settings", "Description", "nexIRC Server")
 frmIRCServer.wsock(0).Close
 frmIRCServer.wsock(0).LocalPort = dB.ReadEntry("Settings", "Port", "6667")
 frmIRCServer.wsock(0).Listen
@@ -352,7 +352,7 @@ AdminName = dB.ReadEntry("Admin", "Name", "")
 AdminEmail = dB.ReadEntry("Admin", "Email", "")
 DefTopic = dB.ReadEntry("Channel Defaults", "Topic", "Unregistered Channel")
 DefUserModes = dB.ReadEntry("Default User Settings", "UserModes", "w")
-DefQuit = dB.ReadEntry("Default User Settings", "Default Quit Msg", "NexIRC")
+DefQuit = dB.ReadEntry("Default User Settings", "Default Quit Msg", "nexIRC")
 For i = 1 To dB.ReadEntry("K-lines", "Count", "0")
     Kline = dB.ReadEntry("K-lines", CStr(i), "")
     Klines.Add Kline, Kline
@@ -621,10 +621,10 @@ With FS.OpenTextFile(LogFile, ForAppending, True)
     .WriteLine "<html>"
     .WriteLine "<head>"
     '.WriteLine "<meta http-equiv=REFRESH content=2>"
-    .WriteLine "<title>NexIRC Status File</title>"
+    .WriteLine "<title>nexIRC Status File</title>"
     .WriteLine "</head>"
     .WriteLine "<body text=#00FF00 bgcolor=#000000>"
-    .WriteLine "<p align=center><b>NexIRC LOG FILE</b></p>"
+    .WriteLine "<p align=center><b>nexIRC LOG FILE</b></p>"
     .WriteLine "<table border=1 cellpadding=0 cellspacing=0 style=border-collapse: collapse bordercolor=#111111 width=100% id=AutoNumber1>"
     .WriteLine "    <tr>"
     .WriteLine "        <td width=20% align=center bgcolor=#C0C0C0><font color=#000000><b>Time</b></font></td>"

@@ -556,7 +556,7 @@ End If
 If Users(Index).IRCOp Then Exit Sub
 If Users(Index).MsgsSent > 3000 Then
     SendQuit CLng(Index), "killed by sysadmin (excess flooding)", True
-    SendWsock Users(Index).Index, ":Server!NexIRC@" & ServerName & " KILL " & Users(Index).Nick & " :Excess flooding", True
+    SendWsock Users(Index).Index, ":Server!nexIRC@" & ServerName & " KILL " & Users(Index).Nick & " :Excess flooding", True
     SendWsock Users(Index).Index, "ERROR :Closing Link: " & Users(Index).Nick & "[" & frmIRCServer.wsock(Index).RemoteHostIP & ".] " & ServerName & " (excess flooding)", True
     If LogLevel = 1 Or LogLevel = 3 Then
         If LogFormat = 0 Then
@@ -1347,7 +1347,7 @@ For i = lb To ub
         End Select
     ElseIf (strcmd(i) Like "INFO*") = True Then
         If Not Users(Index).IRCOp Then Users(Index).MsgsSent = Users(Index).MsgsSent + 250
-        SendWsock Index, ":" & ServerName & " 371 " & Users(Index).Nick & " :" & ServerName & " running NexIRC " & App.Major & "." & App.Minor & "." & App.Revision
+        SendWsock Index, ":" & ServerName & " 371 " & Users(Index).Nick & " :" & ServerName & " running nexIRC " & App.Major & "." & App.Minor & "." & App.Revision
         SendWsock Index, ":" & ServerName & " 371 " & Users(Index).Nick & " :This server was created on Wednesday July 28th by Leon J Aiossa (guide_X@live.com"
         SendWsock Index, ":" & ServerName & " 374 " & Users(Index).Nick & " :End of INFO list"
     ElseIf (strcmd(i) Like "LINKS*") = True Then

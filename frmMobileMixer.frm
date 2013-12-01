@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomctl.ocx"
 Begin VB.Form frmMobileMixer 
    BorderStyle     =   3  'Fixed Dialog
    ClientHeight    =   7755
@@ -945,8 +945,8 @@ If lSettings.sHandleErrors = True Then On Local Error Resume Next
 If Index = 2 Then
     Select Case lPlayback.pCurrentEngine
     Case pMp3
-        'mdiNexIRC.ctlMP3OCX.Seek sldMixer(2).Value
-        'mdiNexIRC.ctlMP3OCX.Tag = "CHANGE"
+        'mdinexIRC.ctlMP3OCX.Seek sldMixer(2).Value
+        'mdinexIRC.ctlMP3OCX.Tag = "CHANGE"
     End Select
 End If
 If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Private Sub sldMixer_Click(Index As Integer)"
@@ -966,8 +966,8 @@ Case 1
     txtMixerText(Index).Text = volume
 Case 2
     If lPlayback.pCurrentEngine = pMp3 Then
-        'If mdiNexIRC.ctlMP3OCX.Tag = "CHANGE" Then
-        '    mdiNexIRC.ctlMP3OCX.Tag = ""
+        'If mdinexIRC.ctlMP3OCX.Tag = "CHANGE" Then
+        '    mdinexIRC.ctlMP3OCX.Tag = ""
         '    ProgressScrolling = False
         'Else
         '    ProgressScrolling = True

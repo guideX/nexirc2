@@ -1993,7 +1993,7 @@ End Sub
 Private Sub cmdAddAutojoin_Click()
 If lSettings.sHandleErrors = True Then On Local Error Resume Next
 Dim msg As String
-msg = InputBox("Enter Channel name:", "NexIRC - Setup Wizard")
+msg = InputBox("Enter Channel name:", "nexIRC - Setup Wizard")
 If LCase(msg) = "@nexgen" Then
     lstAutojoin.AddItem "#nexgen"
     lstAutojoin.AddItem "#nexgentrivia"
@@ -2015,7 +2015,7 @@ End Sub
 Private Sub cmdAddBot_Click()
 If lSettings.sHandleErrors = True Then On Local Error Resume Next
 Dim msg As String, i As Integer
-msg = InputBox("Enter nickname:", "NexIRC - Setup Wizard")
+msg = InputBox("Enter nickname:", "nexIRC - Setup Wizard")
 If msg = "@undernet" Then msg = "x@channels.undernet.org"
 If Len(msg) <> 0 Then
     Select Case cboBotType.ListIndex
@@ -2038,7 +2038,7 @@ End Sub
 Private Sub cmdAddIgnore_Click()
 If lSettings.sHandleErrors = True Then On Local Error Resume Next
 Dim msg As String
-msg = InputBox("Enter nickname:", "NexIRC - Setup Wizard")
+msg = InputBox("Enter nickname:", "nexIRC - Setup Wizard")
 If msg = "@newnet" Then
     AddToIgnore "nBouncer"
     lstIgnore.AddItem "nBouncer"
@@ -2054,7 +2054,7 @@ End Sub
 Private Sub cmdAddNotify_Click()
 If lSettings.sHandleErrors = True Then On Local Error Resume Next
 Dim msg As String, i As Integer, j As Integer, n As Integer
-msg = InputBox("Enter nickname:", "NexIRC - Setup Wizard")
+msg = InputBox("Enter nickname:", "nexIRC - Setup Wizard")
 If msg = "@nexgen" Then
     AddNotify "KnightFal"
     lstNotifyList.AddItem "KnightFal"
@@ -2400,7 +2400,7 @@ If lFrameCount <> lFrame Then
                         '                    lRegInfo.rRegistered = True
                         '                    WriteINI GetINIFile(iIRC), "REGInfo", "NAME", lRegInfo.rName
                         '                    WriteINI GetINIFile(iIRC), "REGInfo", "PASSWORD", lRegInfo.rPassword
-                        '                    mdiNexIRC.Caption = "NexIRC (Registered Version)"
+                        '                    mdinexIRC.Caption = "nexIRC (Registered Version)"
                         '                End If
                         '            Else
                         '                lRegInfo.rRegistered = False

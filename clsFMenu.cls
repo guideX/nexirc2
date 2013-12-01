@@ -158,7 +158,7 @@ If (lNumSections > 0) Then
                     If (tTMI.lIcon > m_lNumIcons) Then
                         tTMI.lIcon = 0
                         If lSettings.sGeneralPrompts = True Then
-                            Call MsgBox("The requested icon # for [" & tTMI.sMenuName & "]Item" & CStr(b) & " is larger than the amount of icons specified. Defaulting to icon #0 (no icon). Please fix this error in your menu.", vbExclamation, "NexIRC")
+                            Call MsgBox("The requested icon # for [" & tTMI.sMenuName & "]Item" & CStr(b) & " is larger than the amount of icons specified. Defaulting to icon #0 (no icon). Please fix this error in your menu.", vbExclamation, "nexIRC")
                         End If
                     End If
                     If (tTMI.sCaption = "-") Then
@@ -361,7 +361,7 @@ If InStr(LCase(lParms), "returnvsvariable[") Then
     msg = Parse(lParms, "ariable[", "]")
     msg = Right(msg, Len(msg) - 7)
     msg2 = "ReturnVSVariable[" & msg & "]"
-    'mdiNexIRC.ctlVBScript.ExecuteStatement "mdiNexIRC.Tag = " & msg
+    'mdinexIRC.ctlVBScript.ExecuteStatement "mdinexIRC.Tag = " & msg
     If Len(mdiNexIRC.Tag) <> 0 Then
         lParms = Replace(lParms, msg2, mdiNexIRC.Tag)
         mdiNexIRC.Tag = ""
@@ -496,7 +496,7 @@ Case "docolor"
         If LCase(lSPLT(0)) = "$activeserver" Then
             Call DoColor(lSettings.sActiveServerForm.txtIncoming, lSPLT(1))
         Else
-            If lForm.Name = "mdiNexIRC" Then
+            If lForm.Name = "mdinexIRC" Then
                 Call DoColor(mdiNexIRC.ActiveForm.txtIncoming, lSPLT(1))
             Else
                 Call DoColor(lForm.txtIncoming, lSPLT(1))
@@ -669,7 +669,7 @@ Case "activateautojoin"
     RunCommand = True
     Exit Function
 Case "vbscript"
-    'mdiNexIRC.ctlVBScript.ExecuteStatement lParms
+    'mdinexIRC.ctlVBScript.ExecuteStatement lParms
     RunCommand = True
     Exit Function
 Case "dccchat"

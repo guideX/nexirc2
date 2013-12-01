@@ -348,7 +348,7 @@ c = ReadINI(GetINIFile(iText), "Settings", "Count", 0)
 If lShowProgress = True Then
     Set lForm = New frmImportAndExportProgress
     lForm.Show
-    lForm.Caption = "NexIRC - Loading Strings"
+    lForm.Caption = "nexIRC - Loading Strings"
     lForm.lblProgress.Caption = "Loading Strings, please wait..."
     lForm.XP_ProgressBar1.Max = c
     DoEvents

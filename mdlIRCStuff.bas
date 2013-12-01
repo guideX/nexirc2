@@ -79,7 +79,7 @@ Public Sub RemoveTaskbar(lCaption As String)
 If lSettings.sHandleErrors = True Then On Local Error Resume Next
 Dim i As Integer
 For i = 1 To mdiNexIRC.StatusBar.Panels.Count
-'    MsgBox mdiNexIRC.StatusBar.Panels.Item(i).Key & " - " & lCaption
+'    MsgBox mdinexIRC.StatusBar.Panels.Item(i).Key & " - " & lCaption
     If LCase(mdiNexIRC.StatusBar.Panels.Item(i).Key) = LCase(lCaption) Then
         mdiNexIRC.StatusBar.Panels.Remove i
         Exit For
@@ -184,7 +184,7 @@ Select Case UCase(word(0))
 '        DoColorSep lTBox
 '        Exit Sub
 '    End If
-'    frmRegister.Show 0, mdiNexIRC
+'    frmRegister.Show 0, mdinexIRC
 '    frmRegister.txtName.Text = parms
 Case "Raw"
     lForm.tcp.SendData parms & vbCrLf
@@ -835,7 +835,7 @@ Case "DCC"
         NewFile.lblFilename.Caption = App.Path & "\data\downloads\" & word(2)
     End If
 Case "VERSION"
-    'lForm.tcp.SendData "NOTICE " & UserName & " :VERSION NexIRC v" & App.major & "." & App.minor & " by Team Nexgen. Programming by |guideX|" & vbCrLf
+    'lForm.tcp.SendData "NOTICE " & UserName & " :VERSION nexIRC v" & App.major & "." & App.minor & " by Team Nexgen. Programming by |guideX|" & vbCrLf
     lForm.tcp.SendData "NOTICE " & UserName & ":VERSION " & ReturnReplacedString(sVersion, App.Major, App.Minor)
     DoColor lSettings.sActiveServerForm.txtIncoming, "" & Color.Normal & "Version sent to " & UserName
 Case "PING"
@@ -854,9 +854,9 @@ Case "PING"
     DoColor RTF, "" & Color.CTCP & "[" & UserName & " PING Reply]: " & i & " seconds "
     If LCase(lSettings.sNickname) <> LCase(UserName) Then
         lForm.tcp.SendData "NOTICE " & UserName & " :PING " & Val(Trim(Str(DateDiff("s", CVDate("07/28/1979"), Now)))) & Chr(1) & vbCrLf
-        lForm.tcp.SendData "NOTICE " & UserName & " :I am running NexIRC©" & vbCrLf
+        lForm.tcp.SendData "NOTICE " & UserName & " :I am running nexIRC©" & vbCrLf
     Else
-        lForm.tcp.SendData "NOTICE " & UserName & " :I am running NexIRC©" & vbCrLf
+        lForm.tcp.SendData "NOTICE " & UserName & " :I am running nexIRC©" & vbCrLf
     End If
 End Select
 If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Sub ctcp(parms As String, lTextBox as ctlTBox, UserName As String, lForm As Form)"
@@ -1041,7 +1041,7 @@ Case "323"
     LoadScript "nexirc\numeric\323.txt"
     Call DoColor(lForm.txtIncoming, "" & Color.Normal & "End of channel list (" & ChannelCount & ")")
     DoColorSep lForm.txtIncoming
-    frmChannels.Caption = "NexIRC - Channel List [" & ChannelCount & "]"
+    frmChannels.Caption = "nexIRC - Channel List [" & ChannelCount & "]"
     frmChannels.lvwChannels.Sort 0, soAscending, stString
 Case "332"
     LoadScript "nexirc\numeric\332.txt"
@@ -1074,7 +1074,7 @@ Case "332"
     Next X
 Case 431
     ProcessReplaceString sNoNicknameGiven, lSettings.sActiveServerForm.txtIncoming
-    frmNicknameError.Caption = "NexIRC - No Nickname Given"
+    frmNicknameError.Caption = "nexIRC - No Nickname Given"
     frmNicknameError.Show 1
     Exit Sub
 Case 461
@@ -1194,7 +1194,7 @@ Case "401"
     DoColor lForm.txtIncoming, "" & Color.Server & strLine & vbCrLf
     DoColorSep lForm.txtIncoming
 Case "432"
-    frmNicknameError.Caption = "NexIRC - Change Nickname"
+    frmNicknameError.Caption = "nexIRC - Change Nickname"
     frmNicknameError.Show 1
 Case "433"
     Exit Sub
@@ -1205,11 +1205,11 @@ Case "433"
         If lSettings.sGeneralPrompts = True Then
             mbox = MsgBox("The nickname you selected has already been selected by another user. Would you like to select another nickname?", vbYesNo + vbQuestion, App.Title)
             If mbox = vbYes Then
-                frmNicknameError.Caption = "NexIRC - Nickname Taken"
+                frmNicknameError.Caption = "nexIRC - Nickname Taken"
                 frmNicknameError.Show 1
             End If
         Else
-            frmNicknameError.Caption = "NexIRC - Nickname Taken"
+            frmNicknameError.Caption = "nexIRC - Nickname Taken"
             frmNicknameError.Show 1
         End If
     End If

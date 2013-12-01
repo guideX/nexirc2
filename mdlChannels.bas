@@ -352,7 +352,7 @@ lListView.ItemAdd 0, lNickName, 0, 0
 'If Len(lNickName) <> 0 Then
 '    If lSettings.sColoredNicklist = True Then
 '        lListView.Sorted = False
-'        'lockwindowupdate mdiNexIRC.hwnd
+'        'lockwindowupdate mdinexIRC.hwnd
 '        If Left(lNickName, 1) = "@" Then
 '            Select Case lListView.BackColor
 '            Case 0

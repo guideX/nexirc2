@@ -4,7 +4,7 @@ Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomctl.ocx"
 Begin VB.MDIForm mdiNexIRC 
    AutoShowChildren=   0   'False
    BackColor       =   &H8000000C&
-   Caption         =   "NexIRC"
+   Caption         =   "nexIRC"
    ClientHeight    =   8685
    ClientLeft      =   60
    ClientTop       =   870
@@ -264,37 +264,28 @@ Begin VB.MDIForm mdiNexIRC
          Top             =   0
          Visible         =   0   'False
          Width           =   855
-         _ExtentX        =   1508
-         _ExtentY        =   582
-         BTYPE           =   2
-         TX              =   ""
-         ENAB            =   -1  'True
-         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         COLTYPE         =   1
-         FOCUSR          =   -1  'True
-         BCOL            =   13160660
-         BCOLO           =   13160660
-         FCOL            =   0
-         FCOLO           =   0
-         MCOL            =   12632256
-         MPTR            =   0
-         MICON           =   "mdiMain.frx":7FEA
-         UMCOL           =   -1  'True
-         SOFT            =   0   'False
-         PICPOS          =   0
-         NGREY           =   0   'False
-         FX              =   0
-         HAND            =   0   'False
-         CHECK           =   0   'False
-         VALUE           =   0   'False
+         _extentx        =   1508
+         _extenty        =   582
+         btype           =   2
+         tx              =   ""
+         enab            =   -1  'True
+         font            =   "mdiMain.frx":7FEA
+         coltype         =   1
+         focusr          =   -1  'True
+         bcol            =   13160660
+         bcolo           =   13160660
+         fcol            =   0
+         fcolo           =   0
+         mcol            =   12632256
+         mptr            =   0
+         micon           =   "mdiMain.frx":8016
+         umcol           =   -1  'True
+         soft            =   0   'False
+         picpos          =   0
+         ngrey           =   0   'False
+         fx              =   0
+         check           =   0   'False
+         value           =   0   'False
       End
       Begin VB.TextBox txtMessage 
          BackColor       =   &H00FFFFFF&
@@ -328,9 +319,9 @@ Begin VB.MDIForm mdiNexIRC
          EndProperty
          ForeColor       =   &H00000000&
          Height          =   315
-         ItemData        =   "mdiMain.frx":8006
+         ItemData        =   "mdiMain.frx":8034
          Left            =   720
-         List            =   "mdiMain.frx":8008
+         List            =   "mdiMain.frx":8036
          Style           =   2  'Dropdown List
          TabIndex        =   9
          TabStop         =   0   'False
@@ -403,37 +394,28 @@ Begin VB.MDIForm mdiNexIRC
          Top             =   0
          Visible         =   0   'False
          Width           =   855
-         _ExtentX        =   1508
-         _ExtentY        =   582
-         BTYPE           =   2
-         TX              =   ""
-         ENAB            =   -1  'True
-         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         COLTYPE         =   1
-         FOCUSR          =   -1  'True
-         BCOL            =   13160660
-         BCOLO           =   13160660
-         FCOL            =   0
-         FCOLO           =   0
-         MCOL            =   12632256
-         MPTR            =   0
-         MICON           =   "mdiMain.frx":800A
-         UMCOL           =   -1  'True
-         SOFT            =   0   'False
-         PICPOS          =   0
-         NGREY           =   0   'False
-         FX              =   0
-         HAND            =   0   'False
-         CHECK           =   0   'False
-         VALUE           =   0   'False
+         _extentx        =   1508
+         _extenty        =   582
+         btype           =   2
+         tx              =   ""
+         enab            =   -1  'True
+         font            =   "mdiMain.frx":8038
+         coltype         =   1
+         focusr          =   -1  'True
+         bcol            =   13160660
+         bcolo           =   13160660
+         fcol            =   0
+         fcolo           =   0
+         mcol            =   12632256
+         mptr            =   0
+         micon           =   "mdiMain.frx":8064
+         umcol           =   -1  'True
+         soft            =   0   'False
+         picpos          =   0
+         ngrey           =   0   'False
+         fx              =   0
+         check           =   0   'False
+         value           =   0   'False
       End
       Begin nexIRC.ctlXPButton cmdSave 
          Height          =   330
@@ -442,37 +424,28 @@ Begin VB.MDIForm mdiNexIRC
          Top             =   0
          Visible         =   0   'False
          Width           =   855
-         _ExtentX        =   1508
-         _ExtentY        =   582
-         BTYPE           =   2
-         TX              =   ""
-         ENAB            =   -1  'True
-         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         COLTYPE         =   1
-         FOCUSR          =   -1  'True
-         BCOL            =   13160660
-         BCOLO           =   13160660
-         FCOL            =   0
-         FCOLO           =   0
-         MCOL            =   12632256
-         MPTR            =   0
-         MICON           =   "mdiMain.frx":8026
-         UMCOL           =   -1  'True
-         SOFT            =   0   'False
-         PICPOS          =   0
-         NGREY           =   0   'False
-         FX              =   0
-         HAND            =   0   'False
-         CHECK           =   0   'False
-         VALUE           =   0   'False
+         _extentx        =   1508
+         _extenty        =   582
+         btype           =   2
+         tx              =   ""
+         enab            =   -1  'True
+         font            =   "mdiMain.frx":8082
+         coltype         =   1
+         focusr          =   -1  'True
+         bcol            =   13160660
+         bcolo           =   13160660
+         fcol            =   0
+         fcolo           =   0
+         mcol            =   12632256
+         mptr            =   0
+         micon           =   "mdiMain.frx":80AE
+         umcol           =   -1  'True
+         soft            =   0   'False
+         picpos          =   0
+         ngrey           =   0   'False
+         fx              =   0
+         check           =   0   'False
+         value           =   0   'False
       End
       Begin VB.ComboBox cboValue 
          Appearance      =   0  'Flat
@@ -486,9 +459,9 @@ Begin VB.MDIForm mdiNexIRC
             Strikethrough   =   0   'False
          EndProperty
          Height          =   315
-         ItemData        =   "mdiMain.frx":8042
+         ItemData        =   "mdiMain.frx":80CC
          Left            =   4560
-         List            =   "mdiMain.frx":8044
+         List            =   "mdiMain.frx":80CE
          Style           =   2  'Dropdown List
          TabIndex        =   25
          TabStop         =   0   'False
@@ -507,9 +480,9 @@ Begin VB.MDIForm mdiNexIRC
             Strikethrough   =   0   'False
          EndProperty
          Height          =   315
-         ItemData        =   "mdiMain.frx":8046
+         ItemData        =   "mdiMain.frx":80D0
          Left            =   2280
-         List            =   "mdiMain.frx":8086
+         List            =   "mdiMain.frx":8110
          Style           =   2  'Dropdown List
          TabIndex        =   24
          TabStop         =   0   'False
@@ -530,9 +503,9 @@ Begin VB.MDIForm mdiNexIRC
          EndProperty
          ForeColor       =   &H00000000&
          Height          =   315
-         ItemData        =   "mdiMain.frx":819B
+         ItemData        =   "mdiMain.frx":8225
          Left            =   0
-         List            =   "mdiMain.frx":8238
+         List            =   "mdiMain.frx":82C2
          Sorted          =   -1  'True
          Style           =   2  'Dropdown List
          TabIndex        =   5
@@ -585,7 +558,7 @@ Begin VB.MDIForm mdiNexIRC
          ForeColor       =   &H80000008&
          Height          =   255
          Left            =   2280
-         MouseIcon       =   "mdiMain.frx":8732
+         MouseIcon       =   "mdiMain.frx":87BC
          MousePointer    =   99  'Custom
          ScaleHeight     =   255
          ScaleWidth      =   255
@@ -613,7 +586,7 @@ Begin VB.MDIForm mdiNexIRC
          ForeColor       =   &H80000008&
          Height          =   255
          Left            =   3000
-         MouseIcon       =   "mdiMain.frx":8884
+         MouseIcon       =   "mdiMain.frx":890E
          MousePointer    =   99  'Custom
          ScaleHeight     =   255
          ScaleWidth      =   255
@@ -632,7 +605,7 @@ Begin VB.MDIForm mdiNexIRC
          ForeColor       =   &H80000008&
          Height          =   255
          Left            =   3360
-         MouseIcon       =   "mdiMain.frx":89D6
+         MouseIcon       =   "mdiMain.frx":8A60
          MousePointer    =   99  'Custom
          ScaleHeight     =   255
          ScaleWidth      =   255
@@ -651,7 +624,7 @@ Begin VB.MDIForm mdiNexIRC
          ForeColor       =   &H80000008&
          Height          =   255
          Left            =   3720
-         MouseIcon       =   "mdiMain.frx":8B28
+         MouseIcon       =   "mdiMain.frx":8BB2
          MousePointer    =   99  'Custom
          ScaleHeight     =   255
          ScaleWidth      =   255
@@ -670,7 +643,7 @@ Begin VB.MDIForm mdiNexIRC
          ForeColor       =   &H80000008&
          Height          =   255
          Left            =   4080
-         MouseIcon       =   "mdiMain.frx":8C7A
+         MouseIcon       =   "mdiMain.frx":8D04
          MousePointer    =   99  'Custom
          ScaleHeight     =   255
          ScaleWidth      =   255
@@ -689,7 +662,7 @@ Begin VB.MDIForm mdiNexIRC
          ForeColor       =   &H80000008&
          Height          =   255
          Left            =   1920
-         MouseIcon       =   "mdiMain.frx":8DCC
+         MouseIcon       =   "mdiMain.frx":8E56
          MousePointer    =   99  'Custom
          ScaleHeight     =   255
          ScaleWidth      =   255
@@ -708,7 +681,7 @@ Begin VB.MDIForm mdiNexIRC
          ForeColor       =   &H80000008&
          Height          =   255
          Left            =   1560
-         MouseIcon       =   "mdiMain.frx":8F1E
+         MouseIcon       =   "mdiMain.frx":8FA8
          MousePointer    =   99  'Custom
          ScaleHeight     =   255
          ScaleWidth      =   255
@@ -727,7 +700,7 @@ Begin VB.MDIForm mdiNexIRC
          ForeColor       =   &H80000008&
          Height          =   255
          Left            =   4440
-         MouseIcon       =   "mdiMain.frx":9070
+         MouseIcon       =   "mdiMain.frx":90FA
          MousePointer    =   99  'Custom
          ScaleHeight     =   255
          ScaleWidth      =   255
@@ -755,7 +728,7 @@ Begin VB.MDIForm mdiNexIRC
          ForeColor       =   &H80000008&
          Height          =   255
          Left            =   4800
-         MouseIcon       =   "mdiMain.frx":91C2
+         MouseIcon       =   "mdiMain.frx":924C
          MousePointer    =   99  'Custom
          ScaleHeight     =   255
          ScaleWidth      =   255
@@ -783,7 +756,7 @@ Begin VB.MDIForm mdiNexIRC
          ForeColor       =   &H80000008&
          Height          =   255
          Left            =   5160
-         MouseIcon       =   "mdiMain.frx":9314
+         MouseIcon       =   "mdiMain.frx":939E
          MousePointer    =   99  'Custom
          ScaleHeight     =   255
          ScaleWidth      =   255
@@ -811,7 +784,7 @@ Begin VB.MDIForm mdiNexIRC
          ForeColor       =   &H80000008&
          Height          =   255
          Left            =   1200
-         MouseIcon       =   "mdiMain.frx":9466
+         MouseIcon       =   "mdiMain.frx":94F0
          MousePointer    =   99  'Custom
          ScaleHeight     =   255
          ScaleWidth      =   255
@@ -839,7 +812,7 @@ Begin VB.MDIForm mdiNexIRC
          ForeColor       =   &H80000008&
          Height          =   255
          Left            =   840
-         MouseIcon       =   "mdiMain.frx":95B8
+         MouseIcon       =   "mdiMain.frx":9642
          MousePointer    =   99  'Custom
          ScaleHeight     =   255
          ScaleWidth      =   255
@@ -867,7 +840,7 @@ Begin VB.MDIForm mdiNexIRC
          ForeColor       =   &H80000008&
          Height          =   255
          Left            =   480
-         MouseIcon       =   "mdiMain.frx":970A
+         MouseIcon       =   "mdiMain.frx":9794
          MousePointer    =   99  'Custom
          ScaleHeight     =   255
          ScaleWidth      =   255
@@ -918,7 +891,7 @@ Begin VB.MDIForm mdiNexIRC
          ForeColor       =   &H80000008&
          Height          =   255
          Left            =   120
-         MouseIcon       =   "mdiMain.frx":985C
+         MouseIcon       =   "mdiMain.frx":98E6
          MousePointer    =   99  'Custom
          ScaleHeight     =   255
          ScaleWidth      =   255
@@ -945,7 +918,7 @@ Begin VB.MDIForm mdiNexIRC
          ForeColor       =   &H80000008&
          Height          =   255
          Left            =   2640
-         MouseIcon       =   "mdiMain.frx":99AE
+         MouseIcon       =   "mdiMain.frx":9A38
          MousePointer    =   99  'Custom
          ScaleHeight     =   255
          ScaleWidth      =   255
@@ -1587,39 +1560,6 @@ Begin VB.MDIForm mdiNexIRC
       Begin VB.Menu mnuSep380926973862734582 
          Caption         =   "-"
       End
-      Begin VB.Menu mnuRegister 
-         Caption         =   "Register"
-      End
-      Begin VB.Menu mnuNexgen 
-         Caption         =   "Team Nexgen"
-         Begin VB.Menu mnuSoftware 
-            Caption         =   "Software"
-         End
-         Begin VB.Menu mnuSep8936296392 
-            Caption         =   "-"
-         End
-         Begin VB.Menu mnuNexgenHomepage 
-            Caption         =   "Homepage"
-         End
-         Begin VB.Menu mnuScripts2 
-            Caption         =   "mIRC Scripts"
-         End
-         Begin VB.Menu mnuMessageForums 
-            Caption         =   "Message Forums"
-         End
-         Begin VB.Menu mnuStaff 
-            Caption         =   "Members"
-         End
-         Begin VB.Menu mnuGuestBook 
-            Caption         =   "Guest Book"
-         End
-         Begin VB.Menu mnuArtwork 
-            Caption         =   "Artwork"
-         End
-      End
-      Begin VB.Menu mnuSep903872983629 
-         Caption         =   "-"
-      End
       Begin VB.Menu mnuAbout 
          Caption         =   "About"
       End
@@ -2130,7 +2070,7 @@ End Sub
 'Private Sub ctlMP3OCX_FrameNotify(ByVal Frame As Long)
 'If Frame = frmMobileMixer.sldMixer(2).Max Then
 '    frmMobileMixer.sldMixer(2).Value = 0
-'    mdiNexIRC.ctlMP3OCX.Visible = False
+'    mdinexIRC.ctlMP3OCX.Visible = False
 'Else
 '    frmMobileMixer.sldMixer(2).Value = Frame
 '    If ProgressScrolling = False Then frmMobileMixer.sldMixer(2).Value = Frame
@@ -2151,29 +2091,29 @@ End Sub
 'Private Sub ctlMP3OCX_PeakFound()
 'If lSettings.sLogoTwitchOnPeaks = True Then
 '    If PicDir = 1 Then
-'        mdiNexIRC.picNexIRC.Left = mdiNexIRC.picNexIRC.Left - 10
-'        mdiNexIRC.picNexIRC.Top = mdiNexIRC.picNexIRC.Top - 10
+'        mdinexIRC.picnexIRC.Left = mdinexIRC.picnexIRC.Left - 10
+'        mdinexIRC.picnexIRC.Top = mdinexIRC.picnexIRC.Top - 10
 '        Sleep 1
-'        mdiNexIRC.picNexIRC.Left = mdiNexIRC.picNexIRC.Left + 10
-'        mdiNexIRC.picNexIRC.Top = mdiNexIRC.picNexIRC.Top + 10
+'        mdinexIRC.picnexIRC.Left = mdinexIRC.picnexIRC.Left + 10
+'        mdinexIRC.picnexIRC.Top = mdinexIRC.picnexIRC.Top + 10
 '    ElseIf PicDir = 2 Then
-'        mdiNexIRC.picNexIRC.Left = mdiNexIRC.picNexIRC.Left + 10
-'        mdiNexIRC.picNexIRC.Top = mdiNexIRC.picNexIRC.Top + 10
+'        mdinexIRC.picnexIRC.Left = mdinexIRC.picnexIRC.Left + 10
+'        mdinexIRC.picnexIRC.Top = mdinexIRC.picnexIRC.Top + 10
 '        Sleep 1
-'        mdiNexIRC.picNexIRC.Left = mdiNexIRC.picNexIRC.Left - 10
-'        mdiNexIRC.picNexIRC.Top = mdiNexIRC.picNexIRC.Top - 10
+'        mdinexIRC.picnexIRC.Left = mdinexIRC.picnexIRC.Left - 10
+'        mdinexIRC.picnexIRC.Top = mdinexIRC.picnexIRC.Top - 10
 '    ElseIf PicDir = 3 Then
-'        mdiNexIRC.picNexIRC.Left = mdiNexIRC.picNexIRC.Left - 10
-'        mdiNexIRC.picNexIRC.Top = mdiNexIRC.picNexIRC.Top + 10
+'        mdinexIRC.picnexIRC.Left = mdinexIRC.picnexIRC.Left - 10
+'        mdinexIRC.picnexIRC.Top = mdinexIRC.picnexIRC.Top + 10
 '        Sleep 1
-'        mdiNexIRC.picNexIRC.Left = mdiNexIRC.picNexIRC.Left + 10
-'        mdiNexIRC.picNexIRC.Top = mdiNexIRC.picNexIRC.Top - 10
+'        mdinexIRC.picnexIRC.Left = mdinexIRC.picnexIRC.Left + 10
+'        mdinexIRC.picnexIRC.Top = mdinexIRC.picnexIRC.Top - 10
 '    ElseIf PicDir = 4 Then
-'        mdiNexIRC.picNexIRC.Left = mdiNexIRC.picNexIRC.Left + 10
-'        mdiNexIRC.picNexIRC.Top = mdiNexIRC.picNexIRC.Top - 10
+'        mdinexIRC.picnexIRC.Left = mdinexIRC.picnexIRC.Left + 10
+'        mdinexIRC.picnexIRC.Top = mdinexIRC.picnexIRC.Top - 10
 '        Sleep 1
-'        mdiNexIRC.picNexIRC.Left = mdiNexIRC.picNexIRC.Left - 10
-'        mdiNexIRC.picNexIRC.Top = mdiNexIRC.picNexIRC.Top + 10
+'        mdinexIRC.picnexIRC.Left = mdinexIRC.picnexIRC.Left - 10
+'        mdinexIRC.picnexIRC.Top = mdinexIRC.picnexIRC.Top + 10
 '    End If
 'End If
 'If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Private Sub ctlMP3OCX_PeakFound()"
@@ -2511,7 +2451,7 @@ If lSettings.sHandleErrors = True Then On Local Error Resume Next
 Dim mbox As VbMsgBoxResult
 If Button = 1 Then
     If lSettings.sGeneralPrompts = True Then
-        mbox = MsgBox("End NexIRC, are you sure?", vbYesNo + vbQuestion, "Exit?")
+        mbox = MsgBox("End nexIRC, are you sure?", vbYesNo + vbQuestion, "Exit?")
         If mbox = vbYes Then
             Unload Me
         Else
@@ -2568,19 +2508,19 @@ ActivateResize
 If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Private Sub picMobileMixer_Resize()"
 End Sub
 
-Private Sub picNexIRC_MouseDown(Button As Integer, Shift As Integer, X As Single, Y As Single)
+Private Sub picnexIRC_MouseDown(Button As Integer, Shift As Integer, X As Single, Y As Single)
 If lSettings.sHandleErrors = True Then On Local Error Resume Next
 PictureBoxMouseDown Button, picNexIRC, frmGraphics.picNexIRC2
-If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Private Sub picNexIRC_MouseDown(Button As Integer, Shift As Integer, x As Single, y As Single)"
+If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Private Sub picnexIRC_MouseDown(Button As Integer, Shift As Integer, x As Single, y As Single)"
 End Sub
 
-Private Sub picNexIRC_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
+Private Sub picnexIRC_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
 If lSettings.sHandleErrors = True Then On Local Error Resume Next
 PictureBoxMouseMove Button, picNexIRC, frmGraphics.picNexIRC1, frmGraphics.picNexIRC2, X, Y, frmGraphics.picNexIRC3
-If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Private Sub picNexIRC_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)"
+If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Private Sub picnexIRC_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)"
 End Sub
 
-Private Sub picNexIRC_MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)
+Private Sub picnexIRC_MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)
 If lSettings.sHandleErrors = True Then On Local Error Resume Next
 Select Case Button
 Case 1
@@ -2590,7 +2530,7 @@ Case 2
     PopupMenu frmMenus.mnuBackground
 End Select
 PictureBoxMouseUp Button, picNexIRC, frmGraphics.picNexIRC1, frmGraphics.picNexIRC2
-If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Private Sub picNexIRC_MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)"
+If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Private Sub picnexIRC_MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)"
 End Sub
 
 Private Sub picPause_MouseDown(Button As Integer, Shift As Integer, X As Single, Y As Single)
@@ -2939,7 +2879,7 @@ End Sub
 'ctlVBScript.AddObject "frmChannelFolder", frmChannelFolder, True
 'ctlVBScript.AddObject "frmIRCServer", frmIRCServer, True
 'ctlVBScript.AddObject "frmAutoConnect", frmAutoConnect, True
-'ctlVBScript.AddObject "mdiNexIRC", mdiNexIRC, True
+'ctlVBScript.AddObject "mdinexIRC", mdinexIRC, True
 'ctlVBScript.AddObject "frmChat", frmChat, True
 'ctlVBScript.AddObject "frmChannels", frmChannels, True
 'ctlVBScript.AddObject "frmQuery", frmQuery, True
@@ -2982,11 +2922,11 @@ Me.Top = lSettings.sLastWindowPos.lParentForm.fTop
 'If lRegInfo.rRegistered = True Then
 '    mnuRegister.Visible = False
 '    lRegInfo.rRegistered = True
-'    Caption = "NexIRC Professional"
+'    Caption = "nexIRC Professional"
 'Else
 '    mnuRegister.Visible = True
 '    lRegInfo.rRegistered = False
-'    Caption = "NexIRC"
+'    Caption = "nexIRC"
 'End If
 LoadIgnore
 If ReturnNotifyEnabled = True Then
@@ -3294,12 +3234,12 @@ End Sub
 'Set F = ActiveForm
 'Select Case F.Name
 'Case "frmTextEditor"
-'    'mdiNexIRC.ctlVBScript.ExecuteStatement F.txtIncoming.Text
+'    'mdinexIRC.ctlVBScript.ExecuteStatement F.txtIncoming.Text
 'Case Else
 '    msg = OpenDialog(Me, "Text Files (*.txt)|*.txt|All Files (*.*)|*.*|", "Open Script", App.Path & "\data\scripts\")
 '    If Len(msg) <> 0 Then
 '        msg2 = ReadFile(msg)
-'        'If Len(msg2) <> 0 Then mdiNexIRC.ctlVBScript.ExecuteStatement msg2
+'        'If Len(msg2) <> 0 Then mdinexIRC.ctlVBScript.ExecuteStatement msg2
 '    End If
 'End Select
 'If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Private Sub mnuExecuteScript_Click()"
@@ -3463,7 +3403,7 @@ End Sub
 Private Sub mnuNewChannel_Click()
 If lSettings.sHandleErrors = True Then On Local Error Resume Next
 frmJoinChannel.Show 0, Me
-frmJoinChannel.Caption = "NexIRC - New Channel"
+frmJoinChannel.Caption = "nexIRC - New Channel"
 If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Private Sub mnuNewChannel_Click()"
 End Sub
 
@@ -3502,10 +3442,10 @@ If lSettings.sHandleErrors = True Then On Local Error Resume Next
 If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Private Sub mnuNexgenHomepage_Click()"
 End Sub
 
-Private Sub mnuNexIRCServer_Click()
+Private Sub mnunexIRCServer_Click()
 If lSettings.sHandleErrors = True Then On Local Error Resume Next
 frmIRCServer.Show
-If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Private Sub mnuNexIRCServer_Click()"
+If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Private Sub mnunexIRCServer_Click()"
 End Sub
 
 Private Sub mnuOpenLogFile_Click()
@@ -3612,7 +3552,7 @@ End Sub
 'Private Sub mnuRegister_Click()
 'If lSettings.sHandleErrors = True Then On Local Error Resume Next
 'frmRegister.Show 0, Me
-'mdiNexIRC.SetFocus
+'mdinexIRC.SetFocus
 'If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Private Sub mnuRegister_Click()"
 'End Sub
 

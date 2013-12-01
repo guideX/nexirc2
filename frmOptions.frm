@@ -4,7 +4,7 @@ Object = "{3B7C8863-D78F-101B-B9B5-04021C009402}#1.2#0"; "richtx32.ocx"
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomctl.ocx"
 Begin VB.Form frmCustomize 
    BorderStyle     =   1  'Fixed Single
-   Caption         =   "NexIRC - Customize"
+   Caption         =   "nexIRC - Customize"
    ClientHeight    =   4920
    ClientLeft      =   5670
    ClientTop       =   3600
@@ -29,7 +29,7 @@ Begin VB.Form frmCustomize
    Begin nexIRC.XP_ProgressBar XP_ProgressBar1 
       Height          =   255
       Left            =   120
-      TabIndex        =   251
+      TabIndex        =   247
       Top             =   3840
       Width           =   1095
       _ExtentX        =   1931
@@ -49,7 +49,7 @@ Begin VB.Form frmCustomize
       Height          =   360
       Index           =   6
       Left            =   120
-      TabIndex        =   222
+      TabIndex        =   218
       Top             =   3360
       Width           =   1095
       _ExtentX        =   1931
@@ -88,7 +88,7 @@ Begin VB.Form frmCustomize
       Height          =   360
       Index           =   10
       Left            =   120
-      TabIndex        =   221
+      TabIndex        =   217
       Top             =   3000
       Width           =   1095
       _ExtentX        =   1931
@@ -127,7 +127,7 @@ Begin VB.Form frmCustomize
       Height          =   360
       Index           =   9
       Left            =   120
-      TabIndex        =   220
+      TabIndex        =   216
       Top             =   2640
       Width           =   1095
       _ExtentX        =   1931
@@ -166,7 +166,7 @@ Begin VB.Form frmCustomize
       Height          =   360
       Index           =   7
       Left            =   120
-      TabIndex        =   219
+      TabIndex        =   215
       Top             =   2280
       Width           =   1095
       _ExtentX        =   1931
@@ -205,7 +205,7 @@ Begin VB.Form frmCustomize
       Height          =   360
       Index           =   5
       Left            =   120
-      TabIndex        =   218
+      TabIndex        =   214
       Top             =   1920
       Width           =   1095
       _ExtentX        =   1931
@@ -244,7 +244,7 @@ Begin VB.Form frmCustomize
       Height          =   360
       Index           =   4
       Left            =   120
-      TabIndex        =   217
+      TabIndex        =   213
       Top             =   1560
       Width           =   1095
       _ExtentX        =   1931
@@ -283,7 +283,7 @@ Begin VB.Form frmCustomize
       Height          =   360
       Index           =   3
       Left            =   120
-      TabIndex        =   216
+      TabIndex        =   212
       Top             =   1200
       Width           =   1095
       _ExtentX        =   1931
@@ -322,7 +322,7 @@ Begin VB.Form frmCustomize
       Height          =   360
       Index           =   2
       Left            =   120
-      TabIndex        =   215
+      TabIndex        =   211
       Top             =   840
       Width           =   1095
       _ExtentX        =   1931
@@ -361,7 +361,7 @@ Begin VB.Form frmCustomize
       Height          =   360
       Index           =   1
       Left            =   120
-      TabIndex        =   214
+      TabIndex        =   210
       Top             =   480
       Width           =   1095
       _ExtentX        =   1931
@@ -400,7 +400,7 @@ Begin VB.Form frmCustomize
       Height          =   360
       Index           =   0
       Left            =   120
-      TabIndex        =   213
+      TabIndex        =   209
       Top             =   120
       Width           =   1095
       _ExtentX        =   1931
@@ -539,13 +539,13 @@ Begin VB.Form frmCustomize
       Caption         =   "Frame1"
       Height          =   615
       Left            =   0
-      TabIndex        =   223
+      TabIndex        =   219
       Top             =   4320
       Width           =   7575
       Begin nexIRC.ctlXPButton cmdConnect 
          Height          =   375
          Left            =   2760
-         TabIndex        =   246
+         TabIndex        =   242
          Top             =   120
          Width           =   1095
          _ExtentX        =   1931
@@ -587,7 +587,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   195
          Left            =   1320
-         TabIndex        =   244
+         TabIndex        =   240
          Top             =   240
          Width           =   1815
       End
@@ -595,7 +595,7 @@ Begin VB.Form frmCustomize
          Default         =   -1  'True
          Height          =   375
          Left            =   3960
-         TabIndex        =   248
+         TabIndex        =   244
          Top             =   120
          Width           =   1095
          _ExtentX        =   1931
@@ -633,7 +633,7 @@ Begin VB.Form frmCustomize
       Begin nexIRC.ctlXPButton cmdApply 
          Height          =   375
          Left            =   5160
-         TabIndex        =   250
+         TabIndex        =   246
          Top             =   120
          Width           =   1095
          _ExtentX        =   1931
@@ -672,7 +672,7 @@ Begin VB.Form frmCustomize
          Cancel          =   -1  'True
          Height          =   375
          Left            =   6360
-         TabIndex        =   252
+         TabIndex        =   248
          Top             =   120
          Width           =   1095
          _ExtentX        =   1931
@@ -711,7 +711,7 @@ Begin VB.Form frmCustomize
          Height          =   375
          Index           =   8
          Left            =   120
-         TabIndex        =   242
+         TabIndex        =   238
          ToolTipText     =   "Show Help Topics"
          Top             =   120
          Width           =   1095
@@ -1208,7 +1208,7 @@ Begin VB.Form frmCustomize
       Height          =   4215
       Index           =   10
       Left            =   1320
-      TabIndex        =   183
+      TabIndex        =   179
       Top             =   0
       Visible         =   0   'False
       Width           =   6255
@@ -1216,7 +1216,7 @@ Begin VB.Form frmCustomize
          Height          =   315
          Left            =   1200
          Style           =   2  'Dropdown List
-         TabIndex        =   185
+         TabIndex        =   181
          Top             =   120
          Width           =   4935
       End
@@ -1224,7 +1224,7 @@ Begin VB.Form frmCustomize
          Height          =   315
          Left            =   1200
          Style           =   2  'Dropdown List
-         TabIndex        =   191
+         TabIndex        =   187
          Top             =   1440
          Width           =   4935
       End
@@ -1232,7 +1232,7 @@ Begin VB.Form frmCustomize
          Height          =   315
          Left            =   1200
          Style           =   2  'Dropdown List
-         TabIndex        =   189
+         TabIndex        =   185
          Top             =   840
          Width           =   2775
       End
@@ -1240,14 +1240,14 @@ Begin VB.Form frmCustomize
          Height          =   315
          Left            =   1200
          Style           =   2  'Dropdown List
-         TabIndex        =   187
+         TabIndex        =   183
          Top             =   480
          Width           =   2775
       End
       Begin nexIRC.ctlXPButton cmdAddBot 
          Height          =   300
          Left            =   4080
-         TabIndex        =   234
+         TabIndex        =   230
          Top             =   480
          Width           =   975
          _ExtentX        =   1720
@@ -1285,7 +1285,7 @@ Begin VB.Form frmCustomize
       Begin nexIRC.ctlXPButton cmdAddBotCommand 
          Height          =   300
          Left            =   4080
-         TabIndex        =   235
+         TabIndex        =   231
          Top             =   840
          Width           =   975
          _ExtentX        =   1720
@@ -1323,7 +1323,7 @@ Begin VB.Form frmCustomize
       Begin nexIRC.ctlXPButton cmdDeleteBot 
          Height          =   300
          Left            =   5160
-         TabIndex        =   236
+         TabIndex        =   232
          Top             =   480
          Width           =   975
          _ExtentX        =   1720
@@ -1361,7 +1361,7 @@ Begin VB.Form frmCustomize
       Begin nexIRC.ctlXPButton cmdDeleteCommands 
          Height          =   300
          Left            =   5160
-         TabIndex        =   237
+         TabIndex        =   233
          Top             =   840
          Width           =   975
          _ExtentX        =   1720
@@ -1399,7 +1399,7 @@ Begin VB.Form frmCustomize
       Begin nexIRC.ctlXPButton cmdAddAutoPerform 
          Height          =   300
          Left            =   1200
-         TabIndex        =   238
+         TabIndex        =   234
          Top             =   1800
          Width           =   975
          _ExtentX        =   1720
@@ -1437,7 +1437,7 @@ Begin VB.Form frmCustomize
       Begin nexIRC.ctlXPButton cmdDeleteAutoPerform 
          Height          =   300
          Left            =   2280
-         TabIndex        =   239
+         TabIndex        =   235
          Top             =   1800
          Width           =   975
          _ExtentX        =   1720
@@ -1475,7 +1475,7 @@ Begin VB.Form frmCustomize
       Begin nexIRC.ctlXPButton cmdRun 
          Height          =   300
          Left            =   3360
-         TabIndex        =   240
+         TabIndex        =   236
          Top             =   1800
          Width           =   975
          _ExtentX        =   1720
@@ -1513,7 +1513,7 @@ Begin VB.Form frmCustomize
       Begin nexIRC.ctlXPButton cmdEdit 
          Height          =   300
          Left            =   4440
-         TabIndex        =   241
+         TabIndex        =   237
          Top             =   1800
          Width           =   975
          _ExtentX        =   1720
@@ -1566,7 +1566,7 @@ Begin VB.Form frmCustomize
          Caption         =   "Bot &Types:"
          Height          =   255
          Left            =   0
-         TabIndex        =   184
+         TabIndex        =   180
          Top             =   120
          Width           =   1215
       End
@@ -1574,7 +1574,7 @@ Begin VB.Form frmCustomize
          Caption         =   "&Auto Preform:"
          Height          =   255
          Left            =   0
-         TabIndex        =   190
+         TabIndex        =   186
          Top             =   1440
          Width           =   1215
       End
@@ -1582,7 +1582,7 @@ Begin VB.Form frmCustomize
          Caption         =   "&Commands:"
          Height          =   255
          Left            =   0
-         TabIndex        =   188
+         TabIndex        =   184
          Top             =   840
          Width           =   1815
       End
@@ -1590,7 +1590,7 @@ Begin VB.Form frmCustomize
          Caption         =   "&Bots:"
          Height          =   255
          Left            =   0
-         TabIndex        =   186
+         TabIndex        =   182
          Top             =   480
          Width           =   1575
       End
@@ -1601,7 +1601,7 @@ Begin VB.Form frmCustomize
       Height          =   4215
       Index           =   9
       Left            =   1320
-      TabIndex        =   181
+      TabIndex        =   177
       Top             =   0
       Visible         =   0   'False
       Width           =   6255
@@ -1611,7 +1611,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   3120
-         TabIndex        =   173
+         TabIndex        =   169
          Top             =   840
          Width           =   2895
       End
@@ -1622,7 +1622,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   3120
-         TabIndex        =   180
+         TabIndex        =   176
          Top             =   2520
          Visible         =   0   'False
          Width           =   1455
@@ -1633,7 +1633,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   3120
-         TabIndex        =   178
+         TabIndex        =   174
          Top             =   2040
          Width           =   1215
       End
@@ -1643,7 +1643,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   3120
-         TabIndex        =   177
+         TabIndex        =   173
          Top             =   1800
          Width           =   1815
       End
@@ -1654,7 +1654,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   3120
-         TabIndex        =   179
+         TabIndex        =   175
          Top             =   2280
          Visible         =   0   'False
          Width           =   1935
@@ -1665,7 +1665,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   3120
-         TabIndex        =   176
+         TabIndex        =   172
          Top             =   1560
          Width           =   1935
       End
@@ -1675,7 +1675,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   3120
-         TabIndex        =   175
+         TabIndex        =   171
          Top             =   1320
          Width           =   1935
       End
@@ -1685,7 +1685,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   0
-         TabIndex        =   155
+         TabIndex        =   151
          Top             =   1560
          Width           =   1455
       End
@@ -1695,14 +1695,14 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   0
-         TabIndex        =   157
+         TabIndex        =   153
          Top             =   1800
          Width           =   1455
       End
       Begin MSComctlLib.Slider sldInitialCDAudio 
          Height          =   195
          Left            =   1440
-         TabIndex        =   160
+         TabIndex        =   156
          Top             =   2040
          Width           =   1575
          _ExtentX        =   2778
@@ -1714,7 +1714,7 @@ Begin VB.Form frmCustomize
       Begin MSComctlLib.Slider sldInitialLineIN 
          Height          =   195
          Left            =   1440
-         TabIndex        =   162
+         TabIndex        =   158
          Top             =   2280
          Width           =   1575
          _ExtentX        =   2778
@@ -1726,7 +1726,7 @@ Begin VB.Form frmCustomize
       Begin MSComctlLib.Slider sldInitialMic 
          Height          =   195
          Left            =   1440
-         TabIndex        =   164
+         TabIndex        =   160
          Top             =   2520
          Width           =   1575
          _ExtentX        =   2778
@@ -1741,7 +1741,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   0
-         TabIndex        =   163
+         TabIndex        =   159
          Top             =   2520
          Width           =   1455
       End
@@ -1751,7 +1751,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   0
-         TabIndex        =   161
+         TabIndex        =   157
          Top             =   2280
          Width           =   1455
       End
@@ -1761,7 +1761,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   0
-         TabIndex        =   159
+         TabIndex        =   155
          Top             =   2040
          Width           =   1455
       End
@@ -1771,14 +1771,14 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   0
-         TabIndex        =   153
+         TabIndex        =   149
          Top             =   1320
          Width           =   1335
       End
       Begin MSComctlLib.Slider sldInitialWave 
          Height          =   195
          Left            =   1440
-         TabIndex        =   154
+         TabIndex        =   150
          Top             =   1320
          Width           =   1575
          _ExtentX        =   2778
@@ -1793,7 +1793,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   0
-         TabIndex        =   151
+         TabIndex        =   147
          Top             =   840
          Width           =   2055
       End
@@ -1803,7 +1803,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   0
-         TabIndex        =   169
+         TabIndex        =   165
          Top             =   3720
          Width           =   975
       End
@@ -1813,7 +1813,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   0
-         TabIndex        =   168
+         TabIndex        =   164
          Top             =   3480
          Width           =   855
       End
@@ -1823,7 +1823,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   0
-         TabIndex        =   166
+         TabIndex        =   162
          Top             =   3000
          Width           =   855
       End
@@ -1833,7 +1833,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   3120
-         TabIndex        =   172
+         TabIndex        =   168
          Top             =   600
          Width           =   1695
       End
@@ -1843,7 +1843,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   3120
-         TabIndex        =   171
+         TabIndex        =   167
          Top             =   360
          Width           =   2295
       End
@@ -1854,7 +1854,7 @@ Begin VB.Form frmCustomize
          Height          =   200
          Index           =   1
          Left            =   0
-         TabIndex        =   149
+         TabIndex        =   145
          Top             =   360
          Value           =   -1  'True
          Width           =   2055
@@ -1866,14 +1866,14 @@ Begin VB.Form frmCustomize
          Height          =   200
          Index           =   2
          Left            =   0
-         TabIndex        =   150
+         TabIndex        =   146
          Top             =   600
          Width           =   2295
       End
       Begin MSComctlLib.Slider sldInitialTreble 
          Height          =   195
          Left            =   1440
-         TabIndex        =   158
+         TabIndex        =   154
          Top             =   1800
          Width           =   1575
          _ExtentX        =   2778
@@ -1885,7 +1885,7 @@ Begin VB.Form frmCustomize
       Begin MSComctlLib.Slider sldInitialBass 
          Height          =   195
          Left            =   1440
-         TabIndex        =   156
+         TabIndex        =   152
          Top             =   1560
          Width           =   1575
          _ExtentX        =   2778
@@ -1907,7 +1907,7 @@ Begin VB.Form frmCustomize
          EndProperty
          Height          =   255
          Left            =   3120
-         TabIndex        =   174
+         TabIndex        =   170
          Top             =   1080
          Width           =   1575
       End
@@ -1924,7 +1924,7 @@ Begin VB.Form frmCustomize
          EndProperty
          Height          =   255
          Left            =   3120
-         TabIndex        =   170
+         TabIndex        =   166
          Top             =   120
          Width           =   1575
       End
@@ -1941,7 +1941,7 @@ Begin VB.Form frmCustomize
          EndProperty
          Height          =   255
          Left            =   0
-         TabIndex        =   167
+         TabIndex        =   163
          Top             =   3240
          Width           =   2775
       End
@@ -1958,7 +1958,7 @@ Begin VB.Form frmCustomize
          EndProperty
          Height          =   255
          Left            =   0
-         TabIndex        =   165
+         TabIndex        =   161
          Top             =   2760
          Width           =   1695
       End
@@ -1975,7 +1975,7 @@ Begin VB.Form frmCustomize
          EndProperty
          Height          =   255
          Left            =   0
-         TabIndex        =   152
+         TabIndex        =   148
          Top             =   1080
          Width           =   1815
       End
@@ -1992,7 +1992,7 @@ Begin VB.Form frmCustomize
          EndProperty
          Height          =   255
          Left            =   0
-         TabIndex        =   148
+         TabIndex        =   144
          Top             =   120
          Width           =   1575
       End
@@ -2002,14 +2002,14 @@ Begin VB.Form frmCustomize
       Height          =   4215
       Index           =   8
       Left            =   1320
-      TabIndex        =   147
+      TabIndex        =   143
       Top             =   0
       Visible         =   0   'False
       Width           =   6255
       Begin RichTextLib.RichTextBox txtHelpInformation 
          Height          =   3570
          Left            =   30
-         TabIndex        =   146
+         TabIndex        =   142
          Top             =   495
          Width           =   6075
          _ExtentX        =   10716
@@ -2017,7 +2017,6 @@ Begin VB.Form frmCustomize
          _Version        =   393217
          BackColor       =   16777215
          BorderStyle     =   0
-         Enabled         =   -1  'True
          ReadOnly        =   -1  'True
          ScrollBars      =   2
          MousePointer    =   1
@@ -2034,7 +2033,7 @@ Begin VB.Form frmCustomize
          List            =   "frmOptions.frx":45BE
          MousePointer    =   1  'Arrow
          Style           =   2  'Dropdown List
-         TabIndex        =   145
+         TabIndex        =   141
          Top             =   120
          Width           =   5535
       End
@@ -2043,7 +2042,7 @@ Begin VB.Form frmCustomize
          Caption         =   "&Topic:"
          Height          =   255
          Left            =   0
-         TabIndex        =   144
+         TabIndex        =   140
          Top             =   120
          Width           =   615
       End
@@ -2061,14 +2060,14 @@ Begin VB.Form frmCustomize
       Height          =   4215
       Index           =   7
       Left            =   1320
-      TabIndex        =   143
+      TabIndex        =   139
       Top             =   0
       Visible         =   0   'False
       Width           =   6255
       Begin nexIRC.ctlXPButton cmdAddToIgnore 
          Height          =   375
          Left            =   0
-         TabIndex        =   224
+         TabIndex        =   220
          Top             =   3360
          Width           =   1095
          _ExtentX        =   1931
@@ -2108,7 +2107,7 @@ Begin VB.Form frmCustomize
          ItemData        =   "frmOptions.frx":45DC
          Left            =   3120
          List            =   "frmOptions.frx":45DE
-         TabIndex        =   142
+         TabIndex        =   138
          Top             =   360
          Width           =   2895
       End
@@ -2118,7 +2117,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   0
-         TabIndex        =   140
+         TabIndex        =   136
          Top             =   3000
          Width           =   1815
       End
@@ -2129,14 +2128,14 @@ Begin VB.Form frmCustomize
          ItemData        =   "frmOptions.frx":45E0
          Left            =   0
          List            =   "frmOptions.frx":45E2
-         TabIndex        =   139
+         TabIndex        =   135
          Top             =   360
          Width           =   2895
       End
       Begin nexIRC.ctlXPButton cmdRemoveIgnore 
          Height          =   375
          Left            =   0
-         TabIndex        =   225
+         TabIndex        =   221
          Top             =   3840
          Width           =   1095
          _ExtentX        =   1931
@@ -2174,7 +2173,7 @@ Begin VB.Form frmCustomize
       Begin nexIRC.ctlXPButton cmdClearIgnore 
          Height          =   375
          Left            =   1200
-         TabIndex        =   226
+         TabIndex        =   222
          Top             =   3840
          Width           =   1095
          _ExtentX        =   1931
@@ -2212,7 +2211,7 @@ Begin VB.Form frmCustomize
       Begin nexIRC.ctlXPButton cmdAddBlacklist 
          Height          =   375
          Left            =   3120
-         TabIndex        =   227
+         TabIndex        =   223
          Top             =   3360
          Width           =   1095
          _ExtentX        =   1931
@@ -2250,7 +2249,7 @@ Begin VB.Form frmCustomize
       Begin nexIRC.ctlXPButton cmdRemoveBlacklist 
          Height          =   375
          Left            =   3120
-         TabIndex        =   228
+         TabIndex        =   224
          Top             =   3840
          Width           =   1095
          _ExtentX        =   1931
@@ -2288,7 +2287,7 @@ Begin VB.Form frmCustomize
       Begin nexIRC.ctlXPButton cmdClearBlackList 
          Height          =   375
          Left            =   4320
-         TabIndex        =   229
+         TabIndex        =   225
          Top             =   3840
          Width           =   1095
          _ExtentX        =   1931
@@ -2327,7 +2326,7 @@ Begin VB.Form frmCustomize
          Caption         =   "&Blacklist:"
          Height          =   255
          Left            =   3120
-         TabIndex        =   141
+         TabIndex        =   137
          Top             =   120
          Width           =   2895
       End
@@ -2336,7 +2335,7 @@ Begin VB.Form frmCustomize
          Caption         =   "&Ignore List:"
          Height          =   255
          Left            =   0
-         TabIndex        =   138
+         TabIndex        =   134
          Top             =   120
          Width           =   2895
       End
@@ -2347,7 +2346,7 @@ Begin VB.Form frmCustomize
       Height          =   4215
       Index           =   6
       Left            =   1320
-      TabIndex        =   137
+      TabIndex        =   133
       Top             =   0
       Visible         =   0   'False
       Width           =   6255
@@ -2367,7 +2366,7 @@ Begin VB.Form frmCustomize
          Left            =   720
          MouseIcon       =   "frmOptions.frx":4670
          MousePointer    =   99  'Custom
-         TabIndex        =   136
+         TabIndex        =   132
          Top             =   3120
          Width           =   2415
       End
@@ -2375,7 +2374,7 @@ Begin VB.Form frmCustomize
          Caption         =   "Website:"
          Height          =   255
          Left            =   0
-         TabIndex        =   135
+         TabIndex        =   131
          Top             =   3120
          Width           =   735
       End
@@ -2390,7 +2389,7 @@ Begin VB.Form frmCustomize
          Caption         =   "©1996-2012 Team Nexgen"
          Height          =   255
          Left            =   0
-         TabIndex        =   130
+         TabIndex        =   126
          Top             =   1320
          Width           =   3015
       End
@@ -2399,7 +2398,7 @@ Begin VB.Form frmCustomize
          Caption         =   $"frmOptions.frx":6067
          Height          =   855
          Left            =   0
-         TabIndex        =   132
+         TabIndex        =   128
          Top             =   1920
          Width           =   6135
       End
@@ -2408,7 +2407,7 @@ Begin VB.Form frmCustomize
          Caption         =   "Version: 2.0"
          Height          =   255
          Left            =   0
-         TabIndex        =   131
+         TabIndex        =   127
          Top             =   1560
          Width           =   6015
       End
@@ -2417,7 +2416,7 @@ Begin VB.Form frmCustomize
          Caption         =   "Support:"
          Height          =   255
          Left            =   0
-         TabIndex        =   133
+         TabIndex        =   129
          Top             =   2880
          Width           =   735
       End
@@ -2438,7 +2437,7 @@ Begin VB.Form frmCustomize
          Left            =   720
          MouseIcon       =   "frmOptions.frx":6187
          MousePointer    =   99  'Custom
-         TabIndex        =   134
+         TabIndex        =   130
          Top             =   2880
          Width           =   2055
       End
@@ -2449,7 +2448,7 @@ Begin VB.Form frmCustomize
       Height          =   4215
       Index           =   5
       Left            =   1320
-      TabIndex        =   182
+      TabIndex        =   178
       Top             =   0
       Visible         =   0   'False
       Width           =   6255
@@ -2459,7 +2458,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   2400
-         TabIndex        =   257
+         TabIndex        =   253
          Top             =   2760
          Width           =   1695
       End
@@ -2469,7 +2468,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   255
          Left            =   2400
-         TabIndex        =   249
+         TabIndex        =   245
          Top             =   3000
          Width           =   2055
       End
@@ -2479,7 +2478,7 @@ Begin VB.Form frmCustomize
          Left            =   2400
          List            =   "frmOptions.frx":62DB
          Style           =   2  'Dropdown List
-         TabIndex        =   245
+         TabIndex        =   241
          Top             =   1080
          Width           =   3615
       End
@@ -2487,7 +2486,7 @@ Begin VB.Form frmCustomize
          Height          =   315
          Left            =   2400
          Style           =   2  'Dropdown List
-         TabIndex        =   128
+         TabIndex        =   124
          Top             =   360
          Width           =   3615
       End
@@ -2497,7 +2496,7 @@ Begin VB.Form frmCustomize
          Height          =   285
          Left            =   0
          MousePointer    =   1  'Arrow
-         TabIndex        =   129
+         TabIndex        =   125
          Top             =   3840
          Width           =   6135
       End
@@ -2510,14 +2509,14 @@ Begin VB.Form frmCustomize
          Left            =   0
          List            =   "frmOptions.frx":62DF
          Sorted          =   -1  'True
-         TabIndex        =   126
+         TabIndex        =   122
          Top             =   120
          Width           =   2295
       End
       Begin nexIRC.ctlXPButton cmdPreviewString 
          Height          =   375
          Left            =   2400
-         TabIndex        =   230
+         TabIndex        =   226
          Top             =   3360
          Width           =   1095
          _ExtentX        =   1931
@@ -2556,7 +2555,7 @@ Begin VB.Form frmCustomize
          Caption         =   "Group:"
          Height          =   255
          Left            =   2400
-         TabIndex        =   243
+         TabIndex        =   239
          Top             =   840
          Width           =   3615
       End
@@ -2564,7 +2563,7 @@ Begin VB.Form frmCustomize
          Caption         =   "&Preset:"
          Height          =   255
          Left            =   2400
-         TabIndex        =   127
+         TabIndex        =   123
          Top             =   120
          Width           =   3495
       End
@@ -2575,7 +2574,7 @@ Begin VB.Form frmCustomize
       Height          =   4215
       Index           =   4
       Left            =   1320
-      TabIndex        =   125
+      TabIndex        =   121
       Top             =   0
       Visible         =   0   'False
       Width           =   6255
@@ -2585,7 +2584,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   195
          Left            =   120
-         TabIndex        =   259
+         TabIndex        =   255
          Top             =   3240
          Width           =   1815
       End
@@ -2595,14 +2594,14 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   255
          Left            =   120
-         TabIndex        =   258
+         TabIndex        =   254
          Top             =   3450
          Width           =   1815
       End
       Begin MSComctlLib.ImageCombo cboProgressBarColor 
          Height          =   330
          Left            =   4200
-         TabIndex        =   256
+         TabIndex        =   252
          Top             =   2400
          Width           =   1935
          _ExtentX        =   3413
@@ -2618,7 +2617,7 @@ Begin VB.Form frmCustomize
          Left            =   4200
          List            =   "frmOptions.frx":62FF
          Style           =   2  'Dropdown List
-         TabIndex        =   253
+         TabIndex        =   249
          Top             =   2040
          Width           =   1935
       End
@@ -2632,7 +2631,7 @@ Begin VB.Form frmCustomize
          Left            =   120
          ScaleHeight     =   2160
          ScaleWidth      =   2880
-         TabIndex        =   78
+         TabIndex        =   74
          Top             =   600
          Width           =   2880
          Begin VB.Label lblcolor 
@@ -2644,7 +2643,7 @@ Begin VB.Form frmCustomize
             Left            =   1440
             MouseIcon       =   "frmOptions.frx":6301
             MousePointer    =   99  'Custom
-            TabIndex        =   87
+            TabIndex        =   83
             Top             =   120
             Width           =   480
          End
@@ -2657,7 +2656,7 @@ Begin VB.Form frmCustomize
             Left            =   1440
             MouseIcon       =   "frmOptions.frx":6453
             MousePointer    =   99  'Custom
-            TabIndex        =   88
+            TabIndex        =   84
             Top             =   360
             Width           =   435
          End
@@ -2670,7 +2669,7 @@ Begin VB.Form frmCustomize
             Left            =   1440
             MouseIcon       =   "frmOptions.frx":65A5
             MousePointer    =   99  'Custom
-            TabIndex        =   89
+            TabIndex        =   85
             Top             =   600
             Width           =   450
          End
@@ -2683,7 +2682,7 @@ Begin VB.Form frmCustomize
             Left            =   1440
             MouseIcon       =   "frmOptions.frx":66F7
             MousePointer    =   99  'Custom
-            TabIndex        =   90
+            TabIndex        =   86
             Top             =   840
             Width           =   825
          End
@@ -2696,7 +2695,7 @@ Begin VB.Form frmCustomize
             Left            =   1440
             MouseIcon       =   "frmOptions.frx":6849
             MousePointer    =   99  'Custom
-            TabIndex        =   91
+            TabIndex        =   87
             Top             =   1080
             Width           =   930
          End
@@ -2709,7 +2708,7 @@ Begin VB.Form frmCustomize
             Left            =   1440
             MouseIcon       =   "frmOptions.frx":699B
             MousePointer    =   99  'Custom
-            TabIndex        =   92
+            TabIndex        =   88
             Top             =   1320
             Width           =   435
          End
@@ -2722,7 +2721,7 @@ Begin VB.Form frmCustomize
             Left            =   1440
             MouseIcon       =   "frmOptions.frx":6AED
             MousePointer    =   99  'Custom
-            TabIndex        =   93
+            TabIndex        =   89
             Top             =   1560
             Width           =   1350
          End
@@ -2735,7 +2734,7 @@ Begin VB.Form frmCustomize
             Left            =   1440
             MouseIcon       =   "frmOptions.frx":6C3F
             MousePointer    =   99  'Custom
-            TabIndex        =   94
+            TabIndex        =   90
             Top             =   1800
             Width           =   1140
          End
@@ -2748,7 +2747,7 @@ Begin VB.Form frmCustomize
             Left            =   120
             MouseIcon       =   "frmOptions.frx":6D91
             MousePointer    =   99  'Custom
-            TabIndex        =   86
+            TabIndex        =   82
             Top             =   1800
             Width           =   900
          End
@@ -2761,7 +2760,7 @@ Begin VB.Form frmCustomize
             Left            =   120
             MouseIcon       =   "frmOptions.frx":6EE3
             MousePointer    =   99  'Custom
-            TabIndex        =   85
+            TabIndex        =   81
             Top             =   1560
             Width           =   915
          End
@@ -2774,7 +2773,7 @@ Begin VB.Form frmCustomize
             Left            =   120
             MouseIcon       =   "frmOptions.frx":7035
             MousePointer    =   99  'Custom
-            TabIndex        =   84
+            TabIndex        =   80
             Top             =   1320
             Width           =   1245
          End
@@ -2787,7 +2786,7 @@ Begin VB.Form frmCustomize
             Left            =   120
             MouseIcon       =   "frmOptions.frx":7187
             MousePointer    =   99  'Custom
-            TabIndex        =   83
+            TabIndex        =   79
             Top             =   1080
             Width           =   450
          End
@@ -2800,7 +2799,7 @@ Begin VB.Form frmCustomize
             Left            =   120
             MouseIcon       =   "frmOptions.frx":72D9
             MousePointer    =   99  'Custom
-            TabIndex        =   82
+            TabIndex        =   78
             Top             =   840
             Width           =   450
          End
@@ -2813,7 +2812,7 @@ Begin VB.Form frmCustomize
             Left            =   120
             MouseIcon       =   "frmOptions.frx":742B
             MousePointer    =   99  'Custom
-            TabIndex        =   81
+            TabIndex        =   77
             Top             =   600
             Width           =   330
          End
@@ -2826,7 +2825,7 @@ Begin VB.Form frmCustomize
             Left            =   120
             MouseIcon       =   "frmOptions.frx":757D
             MousePointer    =   99  'Custom
-            TabIndex        =   79
+            TabIndex        =   75
             Top             =   120
             Width           =   840
          End
@@ -2839,7 +2838,7 @@ Begin VB.Form frmCustomize
             Left            =   120
             MouseIcon       =   "frmOptions.frx":76CF
             MousePointer    =   99  'Custom
-            TabIndex        =   80
+            TabIndex        =   76
             Top             =   360
             Width           =   870
          End
@@ -2850,7 +2849,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   255
          Left            =   3120
-         TabIndex        =   105
+         TabIndex        =   101
          Top             =   3690
          Width           =   2295
       End
@@ -2860,7 +2859,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   3120
-         TabIndex        =   104
+         TabIndex        =   100
          Top             =   3480
          Width           =   2535
       End
@@ -2870,7 +2869,7 @@ Begin VB.Form frmCustomize
          Left            =   4200
          List            =   "frmOptions.frx":7823
          Style           =   2  'Dropdown List
-         TabIndex        =   102
+         TabIndex        =   98
          Top             =   1680
          Width           =   1935
       End
@@ -2880,7 +2879,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   120
-         TabIndex        =   123
+         TabIndex        =   119
          Top             =   3720
          Width           =   2295
       End
@@ -2890,7 +2889,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   120
-         TabIndex        =   124
+         TabIndex        =   120
          Top             =   3960
          Width           =   2295
       End
@@ -2900,7 +2899,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   3120
-         TabIndex        =   103
+         TabIndex        =   99
          Top             =   3960
          Width           =   2535
       End
@@ -2908,7 +2907,7 @@ Begin VB.Form frmCustomize
          Height          =   315
          Left            =   720
          Style           =   2  'Dropdown List
-         TabIndex        =   77
+         TabIndex        =   73
          Top             =   120
          Width           =   5415
       End
@@ -2932,7 +2931,7 @@ Begin VB.Form frmCustomize
          MousePointer    =   99  'Custom
          ScaleHeight     =   225
          ScaleWidth      =   225
-         TabIndex        =   121
+         TabIndex        =   117
          Top             =   2880
          Width           =   255
       End
@@ -2947,7 +2946,7 @@ Begin VB.Form frmCustomize
          MousePointer    =   99  'Custom
          ScaleHeight     =   225
          ScaleWidth      =   225
-         TabIndex        =   120
+         TabIndex        =   116
          Top             =   2880
          Width           =   255
       End
@@ -2962,7 +2961,7 @@ Begin VB.Form frmCustomize
          MousePointer    =   99  'Custom
          ScaleHeight     =   225
          ScaleWidth      =   225
-         TabIndex        =   119
+         TabIndex        =   115
          Top             =   2880
          Width           =   255
       End
@@ -2977,7 +2976,7 @@ Begin VB.Form frmCustomize
          MousePointer    =   99  'Custom
          ScaleHeight     =   225
          ScaleWidth      =   225
-         TabIndex        =   118
+         TabIndex        =   114
          Top             =   2880
          Width           =   255
       End
@@ -2992,7 +2991,7 @@ Begin VB.Form frmCustomize
          MousePointer    =   99  'Custom
          ScaleHeight     =   225
          ScaleWidth      =   225
-         TabIndex        =   117
+         TabIndex        =   113
          Top             =   2880
          Width           =   255
       End
@@ -3007,7 +3006,7 @@ Begin VB.Form frmCustomize
          MousePointer    =   99  'Custom
          ScaleHeight     =   225
          ScaleWidth      =   225
-         TabIndex        =   116
+         TabIndex        =   112
          Top             =   2880
          Width           =   255
       End
@@ -3022,7 +3021,7 @@ Begin VB.Form frmCustomize
          MousePointer    =   99  'Custom
          ScaleHeight     =   225
          ScaleWidth      =   225
-         TabIndex        =   115
+         TabIndex        =   111
          Top             =   2880
          Width           =   255
       End
@@ -3037,7 +3036,7 @@ Begin VB.Form frmCustomize
          MousePointer    =   99  'Custom
          ScaleHeight     =   225
          ScaleWidth      =   225
-         TabIndex        =   114
+         TabIndex        =   110
          Top             =   2880
          Width           =   255
       End
@@ -3052,7 +3051,7 @@ Begin VB.Form frmCustomize
          MousePointer    =   99  'Custom
          ScaleHeight     =   225
          ScaleWidth      =   225
-         TabIndex        =   113
+         TabIndex        =   109
          Top             =   2880
          Width           =   255
       End
@@ -3067,7 +3066,7 @@ Begin VB.Form frmCustomize
          MousePointer    =   99  'Custom
          ScaleHeight     =   225
          ScaleWidth      =   225
-         TabIndex        =   112
+         TabIndex        =   108
          Top             =   2880
          Width           =   255
       End
@@ -3082,7 +3081,7 @@ Begin VB.Form frmCustomize
          MousePointer    =   99  'Custom
          ScaleHeight     =   225
          ScaleWidth      =   225
-         TabIndex        =   111
+         TabIndex        =   107
          Top             =   2880
          Width           =   255
       End
@@ -3097,7 +3096,7 @@ Begin VB.Form frmCustomize
          MousePointer    =   99  'Custom
          ScaleHeight     =   225
          ScaleWidth      =   225
-         TabIndex        =   110
+         TabIndex        =   106
          Top             =   2880
          Width           =   255
       End
@@ -3112,7 +3111,7 @@ Begin VB.Form frmCustomize
          MousePointer    =   99  'Custom
          ScaleHeight     =   225
          ScaleWidth      =   225
-         TabIndex        =   109
+         TabIndex        =   105
          Top             =   2880
          Width           =   255
       End
@@ -3127,7 +3126,7 @@ Begin VB.Form frmCustomize
          MousePointer    =   99  'Custom
          ScaleHeight     =   225
          ScaleWidth      =   225
-         TabIndex        =   108
+         TabIndex        =   104
          Top             =   2880
          Width           =   255
       End
@@ -3142,7 +3141,7 @@ Begin VB.Form frmCustomize
          MousePointer    =   99  'Custom
          ScaleHeight     =   225
          ScaleWidth      =   225
-         TabIndex        =   107
+         TabIndex        =   103
          Top             =   2880
          Width           =   255
       End
@@ -3157,14 +3156,14 @@ Begin VB.Form frmCustomize
          MousePointer    =   99  'Custom
          ScaleHeight     =   225
          ScaleWidth      =   225
-         TabIndex        =   106
+         TabIndex        =   102
          Top             =   2880
          Width           =   255
       End
       Begin MSComctlLib.ImageCombo cboOpColor 
          Height          =   330
          Left            =   4200
-         TabIndex        =   96
+         TabIndex        =   92
          Top             =   600
          Width           =   1935
          _ExtentX        =   3413
@@ -3178,7 +3177,7 @@ Begin VB.Form frmCustomize
       Begin MSComctlLib.ImageCombo cboVoiceColor 
          Height          =   330
          Left            =   4200
-         TabIndex        =   98
+         TabIndex        =   94
          Top             =   960
          Width           =   1935
          _ExtentX        =   3413
@@ -3192,7 +3191,7 @@ Begin VB.Form frmCustomize
       Begin MSComctlLib.ImageCombo cboNormalColor 
          Height          =   330
          Left            =   4200
-         TabIndex        =   100
+         TabIndex        =   96
          Top             =   1320
          Width           =   1935
          _ExtentX        =   3413
@@ -3207,7 +3206,7 @@ Begin VB.Form frmCustomize
          Caption         =   "Scroll Color"
          Height          =   255
          Left            =   3120
-         TabIndex        =   255
+         TabIndex        =   251
          Top             =   2400
          Width           =   1095
       End
@@ -3215,7 +3214,7 @@ Begin VB.Form frmCustomize
          Caption         =   "Scroll Style:"
          Height          =   255
          Left            =   3120
-         TabIndex        =   254
+         TabIndex        =   250
          Top             =   2040
          Width           =   1095
       End
@@ -3223,7 +3222,7 @@ Begin VB.Form frmCustomize
          Caption         =   "&Ops Color:"
          Height          =   255
          Left            =   3120
-         TabIndex        =   95
+         TabIndex        =   91
          Top             =   600
          Width           =   975
       End
@@ -3231,7 +3230,7 @@ Begin VB.Form frmCustomize
          Caption         =   "&Voice Color:"
          Height          =   255
          Left            =   3120
-         TabIndex        =   97
+         TabIndex        =   93
          Top             =   960
          Width           =   975
       End
@@ -3239,7 +3238,7 @@ Begin VB.Form frmCustomize
          Caption         =   "&Normal Color:"
          Height          =   255
          Left            =   3120
-         TabIndex        =   99
+         TabIndex        =   95
          Top             =   1320
          Width           =   1095
       End
@@ -3247,7 +3246,7 @@ Begin VB.Form frmCustomize
          Caption         =   "&Button Type:"
          Height          =   255
          Left            =   3120
-         TabIndex        =   101
+         TabIndex        =   97
          Top             =   1680
          Width           =   1095
       End
@@ -3262,14 +3261,14 @@ Begin VB.Form frmCustomize
          Caption         =   "Theme:"
          Height          =   255
          Left            =   120
-         TabIndex        =   76
+         TabIndex        =   72
          Top             =   160
          Width           =   1455
       End
       Begin VB.Label lblExample 
          Height          =   255
          Left            =   3120
-         TabIndex        =   122
+         TabIndex        =   118
          Top             =   3120
          Visible         =   0   'False
          Width           =   3015
@@ -3281,7 +3280,7 @@ Begin VB.Form frmCustomize
       Height          =   4215
       Index           =   3
       Left            =   1320
-      TabIndex        =   75
+      TabIndex        =   71
       Top             =   0
       Visible         =   0   'False
       Width           =   6255
@@ -3292,7 +3291,7 @@ Begin VB.Form frmCustomize
          ItemData        =   "frmOptions.frx":8D45
          Left            =   0
          List            =   "frmOptions.frx":8D47
-         TabIndex        =   67
+         TabIndex        =   63
          Top             =   120
          Width           =   1815
       End
@@ -3302,7 +3301,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   1920
-         TabIndex        =   74
+         TabIndex        =   70
          Top             =   2160
          Width           =   2055
       End
@@ -3312,7 +3311,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   1920
-         TabIndex        =   73
+         TabIndex        =   69
          Top             =   1920
          Width           =   2055
       End
@@ -3322,7 +3321,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   1920
-         TabIndex        =   72
+         TabIndex        =   68
          Top             =   1680
          Width           =   2055
       End
@@ -3332,7 +3331,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   1920
-         TabIndex        =   71
+         TabIndex        =   67
          Top             =   1440
          Width           =   3975
       End
@@ -3342,7 +3341,7 @@ Begin VB.Form frmCustomize
          Height          =   285
          Left            =   1920
          MousePointer    =   1  'Arrow
-         TabIndex        =   68
+         TabIndex        =   64
          Top             =   120
          Width           =   4140
       End
@@ -3352,7 +3351,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   1920
-         TabIndex        =   69
+         TabIndex        =   65
          Top             =   960
          Width           =   2055
       End
@@ -3362,14 +3361,14 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   1920
-         TabIndex        =   70
+         TabIndex        =   66
          Top             =   1200
          Width           =   3975
       End
       Begin nexIRC.ctlXPButton cmdAdd 
          Height          =   375
          Left            =   1920
-         TabIndex        =   231
+         TabIndex        =   227
          Top             =   480
          Width           =   1095
          _ExtentX        =   1931
@@ -3407,7 +3406,7 @@ Begin VB.Form frmCustomize
       Begin nexIRC.ctlXPButton cmdDelete 
          Height          =   375
          Left            =   3120
-         TabIndex        =   232
+         TabIndex        =   228
          Top             =   480
          Width           =   1095
          _ExtentX        =   1931
@@ -3445,7 +3444,7 @@ Begin VB.Form frmCustomize
       Begin nexIRC.ctlXPButton cmdClear 
          Height          =   375
          Left            =   4320
-         TabIndex        =   233
+         TabIndex        =   229
          Top             =   480
          Width           =   1095
          _ExtentX        =   1931
@@ -3489,7 +3488,7 @@ Begin VB.Form frmCustomize
       Height          =   4215
       Index           =   2
       Left            =   1320
-      TabIndex        =   66
+      TabIndex        =   62
       Top             =   0
       Visible         =   0   'False
       Width           =   6255
@@ -3499,7 +3498,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   195
          Left            =   4200
-         TabIndex        =   247
+         TabIndex        =   243
          Top             =   2520
          Width           =   975
       End
@@ -3539,7 +3538,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   195
          Left            =   4200
-         TabIndex        =   60
+         TabIndex        =   56
          Top             =   1800
          Width           =   1935
       End
@@ -3569,7 +3568,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   4200
-         TabIndex        =   59
+         TabIndex        =   55
          Top             =   1560
          Width           =   1815
       End
@@ -3589,7 +3588,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   195
          Left            =   4200
-         TabIndex        =   54
+         TabIndex        =   50
          Top             =   360
          Width           =   1575
       End
@@ -3599,7 +3598,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   195
          Left            =   2040
-         TabIndex        =   50
+         TabIndex        =   46
          Top             =   3240
          Width           =   1575
       End
@@ -3609,7 +3608,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   195
          Left            =   4200
-         TabIndex        =   55
+         TabIndex        =   51
          Top             =   600
          Width           =   1455
       End
@@ -3679,7 +3678,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   195
          Left            =   2040
-         TabIndex        =   52
+         TabIndex        =   48
          Top             =   3720
          Width           =   1815
       End
@@ -3689,7 +3688,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   195
          Left            =   2040
-         TabIndex        =   49
+         TabIndex        =   45
          Top             =   3000
          Width           =   1455
       End
@@ -3750,7 +3749,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   195
          Left            =   2040
-         TabIndex        =   48
+         TabIndex        =   44
          Top             =   2760
          Width           =   2055
       End
@@ -3760,7 +3759,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   195
          Left            =   2040
-         TabIndex        =   51
+         TabIndex        =   47
          Top             =   3480
          Width           =   1095
       End
@@ -3770,7 +3769,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   195
          Left            =   4200
-         TabIndex        =   63
+         TabIndex        =   59
          Top             =   2760
          Width           =   735
       End
@@ -3780,7 +3779,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   195
          Left            =   4200
-         TabIndex        =   62
+         TabIndex        =   58
          Top             =   2280
          Width           =   975
       End
@@ -3790,7 +3789,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   195
          Left            =   4200
-         TabIndex        =   57
+         TabIndex        =   53
          Top             =   1080
          Width           =   1335
       End
@@ -3820,7 +3819,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   195
          Left            =   4200
-         TabIndex        =   56
+         TabIndex        =   52
          Top             =   840
          Width           =   1695
       End
@@ -3840,7 +3839,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   195
          Left            =   4200
-         TabIndex        =   58
+         TabIndex        =   54
          Top             =   1320
          Width           =   1575
       End
@@ -3848,29 +3847,9 @@ Begin VB.Form frmCustomize
          Height          =   250
          Left            =   4680
          MousePointer    =   1  'Arrow
-         TabIndex        =   65
+         TabIndex        =   61
          Top             =   3840
          Width           =   1335
-      End
-      Begin VB.CheckBox chkBackgroundWebpage 
-         Appearance      =   0  'Flat
-         Caption         =   "&In Background"
-         ForeColor       =   &H80000008&
-         Height          =   195
-         Left            =   2040
-         TabIndex        =   44
-         Top             =   2040
-         Width           =   1455
-      End
-      Begin VB.TextBox txtHomepage 
-         BackColor       =   &H00FFFFFF&
-         ForeColor       =   &H00000000&
-         Height          =   250
-         Left            =   3000
-         MousePointer    =   1  'Arrow
-         TabIndex        =   46
-         Top             =   2280
-         Width           =   1095
       End
       Begin VB.Label lblChannels 
          Caption         =   "&Channels"
@@ -3885,7 +3864,7 @@ Begin VB.Form frmCustomize
          EndProperty
          Height          =   255
          Left            =   2040
-         TabIndex        =   47
+         TabIndex        =   43
          Top             =   2520
          Width           =   1335
       End
@@ -3953,7 +3932,7 @@ Begin VB.Form frmCustomize
          EndProperty
          Height          =   255
          Left            =   4200
-         TabIndex        =   61
+         TabIndex        =   57
          Top             =   2040
          Width           =   975
       End
@@ -3970,7 +3949,7 @@ Begin VB.Form frmCustomize
          EndProperty
          Height          =   255
          Left            =   4200
-         TabIndex        =   53
+         TabIndex        =   49
          Top             =   120
          Width           =   1335
       End
@@ -3995,34 +3974,9 @@ Begin VB.Form frmCustomize
          Caption         =   "&Quit:"
          Height          =   255
          Left            =   4200
-         TabIndex        =   64
+         TabIndex        =   60
          Top             =   3840
          Width           =   855
-      End
-      Begin VB.Label lblHomepage 
-         Caption         =   "&Homepage:"
-         Height          =   255
-         Left            =   2040
-         TabIndex        =   45
-         Top             =   2280
-         Width           =   975
-      End
-      Begin VB.Label lblBrowser 
-         Caption         =   "&Browser"
-         BeginProperty Font 
-            Name            =   "Tahoma"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   255
-         Left            =   2040
-         TabIndex        =   43
-         Top             =   1800
-         Width           =   975
       End
    End
    Begin VB.Frame fraSettings 
@@ -4031,7 +3985,7 @@ Begin VB.Form frmCustomize
       Height          =   4215
       Index           =   1
       Left            =   1320
-      TabIndex        =   192
+      TabIndex        =   188
       Top             =   0
       Visible         =   0   'False
       Width           =   6255
@@ -4043,7 +3997,7 @@ Begin VB.Form frmCustomize
          Height          =   250
          Left            =   1220
          MousePointer    =   1  'Arrow
-         TabIndex        =   193
+         TabIndex        =   189
          Top             =   120
          Width           =   4900
       End
@@ -4053,7 +4007,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   1080
-         TabIndex        =   205
+         TabIndex        =   201
          Top             =   3960
          Width           =   2055
       End
@@ -4065,7 +4019,7 @@ Begin VB.Form frmCustomize
          Height          =   250
          Left            =   1215
          MousePointer    =   1  'Arrow
-         TabIndex        =   196
+         TabIndex        =   192
          Top             =   960
          Width           =   4900
       End
@@ -4077,7 +4031,7 @@ Begin VB.Form frmCustomize
          Height          =   250
          Left            =   1215
          MousePointer    =   1  'Arrow
-         TabIndex        =   197
+         TabIndex        =   193
          Top             =   1215
          Width           =   4900
       End
@@ -4089,7 +4043,7 @@ Begin VB.Form frmCustomize
          Height          =   250
          Left            =   1215
          MousePointer    =   1  'Arrow
-         TabIndex        =   198
+         TabIndex        =   194
          Top             =   1470
          Width           =   4900
       End
@@ -4099,7 +4053,7 @@ Begin VB.Form frmCustomize
          ForeColor       =   &H80000008&
          Height          =   200
          Left            =   1080
-         TabIndex        =   203
+         TabIndex        =   199
          Top             =   3720
          Width           =   1935
       End
@@ -4111,7 +4065,7 @@ Begin VB.Form frmCustomize
          Height          =   250
          Left            =   1215
          MousePointer    =   1  'Arrow
-         TabIndex        =   195
+         TabIndex        =   191
          Top             =   630
          Width           =   4900
       End
@@ -4123,7 +4077,7 @@ Begin VB.Form frmCustomize
          Height          =   250
          Left            =   1215
          MousePointer    =   1  'Arrow
-         TabIndex        =   194
+         TabIndex        =   190
          Top             =   375
          Width           =   4900
       End
@@ -4131,14 +4085,14 @@ Begin VB.Form frmCustomize
          Height          =   315
          Left            =   1200
          Style           =   2  'Dropdown List
-         TabIndex        =   199
+         TabIndex        =   195
          Top             =   1845
          Width           =   4935
       End
       Begin nexIRC.ctlXPButton cmdAddAlternate 
          Height          =   375
          Left            =   2640
-         TabIndex        =   200
+         TabIndex        =   196
          Top             =   2280
          Width           =   1095
          _ExtentX        =   1931
@@ -4176,7 +4130,7 @@ Begin VB.Form frmCustomize
       Begin nexIRC.ctlXPButton cmdRemoveAlternate 
          Height          =   375
          Left            =   3840
-         TabIndex        =   201
+         TabIndex        =   197
          Top             =   2280
          Width           =   1095
          _ExtentX        =   1931
@@ -4214,7 +4168,7 @@ Begin VB.Form frmCustomize
       Begin nexIRC.ctlXPButton cmdClearAlternates 
          Height          =   375
          Left            =   5040
-         TabIndex        =   202
+         TabIndex        =   198
          Top             =   2280
          Width           =   1095
          _ExtentX        =   1931
@@ -4252,7 +4206,7 @@ Begin VB.Form frmCustomize
       Begin nexIRC.ctlXPButton cmdDefaultIdent 
          Height          =   375
          Left            =   5040
-         TabIndex        =   206
+         TabIndex        =   202
          Top             =   3720
          Width           =   1095
          _ExtentX        =   1931
@@ -4293,7 +4247,7 @@ Begin VB.Form frmCustomize
          Height          =   255
          Index           =   2
          Left            =   0
-         TabIndex        =   212
+         TabIndex        =   208
          Top             =   120
          Width           =   975
       End
@@ -4302,7 +4256,7 @@ Begin VB.Form frmCustomize
          Caption         =   "&E-Mail:"
          Height          =   255
          Left            =   0
-         TabIndex        =   211
+         TabIndex        =   207
          Top             =   360
          Width           =   975
       End
@@ -4311,7 +4265,7 @@ Begin VB.Form frmCustomize
          Caption         =   "&Real Name:"
          Height          =   255
          Left            =   0
-         TabIndex        =   210
+         TabIndex        =   206
          Top             =   600
          Width           =   855
       End
@@ -4320,7 +4274,7 @@ Begin VB.Form frmCustomize
          Caption         =   "&UserID:"
          Height          =   255
          Left            =   0
-         TabIndex        =   209
+         TabIndex        =   205
          Top             =   960
          Width           =   975
       End
@@ -4329,7 +4283,7 @@ Begin VB.Form frmCustomize
          Caption         =   "&System:"
          Height          =   255
          Left            =   0
-         TabIndex        =   208
+         TabIndex        =   204
          Top             =   1200
          Width           =   975
       End
@@ -4338,7 +4292,7 @@ Begin VB.Form frmCustomize
          Caption         =   "&Port:"
          Height          =   255
          Left            =   0
-         TabIndex        =   207
+         TabIndex        =   203
          Top             =   1440
          Width           =   975
       End
@@ -4362,7 +4316,7 @@ Begin VB.Form frmCustomize
          Caption         =   "&Nicknames:"
          Height          =   255
          Left            =   0
-         TabIndex        =   204
+         TabIndex        =   200
          Top             =   1845
          Width           =   975
       End
@@ -4445,11 +4399,11 @@ lSettings.sShuffle = GetCheckboxValue(chkShuffle)
 lSettings.sServerMinimum = cboServerMinimum.Text
 frmMobileMixer.chkContinuous.Value = chkContinuousPlay.Value
 frmMobileMixer.chkShuffle.Value = chkShuffle.Value
-If lSettings.sBackgroundWebpage = False And chkBackgroundWebpage.Value = 1 Then
+'If lSettings.sBackgroundWebpage = False And chkBackgroundWebpage.Value = 1 Then
     ''frmWeb.Visible = True
-ElseIf lSettings.sBackgroundWebpage = True And chkBackgroundWebpage.Value = 0 Then
+'ElseIf lSettings.sBackgroundWebpage = True And chkBackgroundWebpage.Value = 0 Then
     ''frmWeb.Visible = False
-End If
+'End If
 'If optEngine(1).Value = True Then
 '    SwitchPlaybackEngine pMp3
 'ElseIf optEngine(2).Value = True Then
@@ -4490,7 +4444,7 @@ lSettings.sEnableSearch = GetCheckboxValue(chkEnableFind)
 lSettings.sEnableList = GetCheckboxValue(chkEnableListmedia)
 lSettings.sTimeStamping = GetCheckboxValue(chkTimeStamping)
 lSettings.sAutoSelectAlternateNickname = GetCheckboxValue(chkAutoSelectAlternateNickname)
-lSettings.sBackgroundWebpage = GetCheckboxValue(chkBackgroundWebpage)
+'lSettings.sBackgroundWebpage = GetCheckboxValue(chkBackgroundWebpage)
 lSettings.sNavigateOnStartup = GetCheckboxValue(chkNavigateOnStartup)
 lSettings.sAutoJoinEnabled = GetCheckboxValue(chkAutoJoinEnabled)
 lSettings.sShowQuickmix = GetCheckboxValue(chkShowQuickMix)
@@ -4534,7 +4488,7 @@ lSettings.sShowOptionsOnStartup = GetCheckboxValue(chkShowMe)
 lSettings.sConnectOnStartup = GetCheckboxValue(chkConnectOnStartup)
 lSettings.sShowSplashOnStartup = GetCheckboxValue(chkShowSplashScreenOnStartup)
 lSettings.sByPassStartupScreen = GetCheckboxValue(chkByPassStartupScreen)
-lSettings.sHomepage = txtHomepage.Text
+'lSettings.sHomepage = txtHomepage.Text
 SetNotifyToListBox lstNotify
 lSettings.sOptions.oShowNotifyInActiveWindow = GetCheckboxValue(chkNotifyOnActive)
 SetNotifyEnabled GetCheckboxValue(chkEnable)
@@ -4827,7 +4781,7 @@ End Sub
 
 Private Sub cmdAddBlackList_Click()
 If lSettings.sHandleErrors = True Then On Local Error Resume Next
-AddToBlacklist InputBox("Enter Nickname:", "NexIRC"), InputBox("Enter Address:", "NexIRC")
+AddToBlacklist InputBox("Enter Nickname:", "nexIRC"), InputBox("Enter Address:", "nexIRC")
 If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Private Sub cmdAddBlackList_Click()"
 End Sub
 
@@ -5467,7 +5421,7 @@ txtRealName.Text = lSettings.sRealName
 txtIdentUserID.Text = lSettings.sIdent.iUserID
 txtIdentSystem.Text = lSettings.sIdent.iSystem
 txtIdentPort.Text = lSettings.sIdent.iPort
-txtHomepage.Text = lSettings.sHomepage
+'txtHomepage.Text = lSettings.sHomepage
 SetCheckBoxValue chkIdent, lSettings.sIdent.iEnabled
 SetCheckBoxValue chkIdentShow, lSettings.sIdent.iShow
 FillListBoxWithNotify lstNotify
@@ -5641,7 +5595,7 @@ SetCheckBoxValue chkShowTopics, lSettings.sOptions.oShowTopics
 SetCheckBoxValue chkShowKicks, lSettings.sOptions.oShowKicks
 SetCheckBoxValue chkEnableIgnore, ReturnIgnoreEnabled
 SetCheckBoxValue chkShowMe, lSettings.sShowOptionsOnStartup
-SetCheckBoxValue chkBackgroundWebpage, lSettings.sBackgroundWebpage
+'SetCheckBoxValue chkBackgroundWebpage, lSettings.sBackgroundWebpage
 SetCheckBoxValue chkGeneralPrompts, lSettings.sGeneralPrompts
 SetCheckBoxValue chkDCCPrompts, lSettings.sDCCPrompts
 FillListboxWithTextDescriptions lstString
@@ -5800,38 +5754,38 @@ DoEvents
 fraSettings(lIndex).Visible = True
 Select Case lIndex
 Case 0
-    Me.Caption = "NexIRC - Network/Server"
+    Me.Caption = "nexIRC - Network/Server"
     
 Case 1
-    Me.Caption = "NexIRC - User/Identd"
+    Me.Caption = "nexIRC - User/Identd"
     txtNickname.SetFocus
 Case 2
-    Me.Caption = "NexIRC - Options"
+    Me.Caption = "nexIRC - Options"
     chkUpdateCheck.SetFocus
 Case 3
-    Me.Caption = "NexIRC - Notify"
+    Me.Caption = "nexIRC - Notify"
     lstNotify.SetFocus
 Case 4
-    Me.Caption = "NexIRC - Themes/Colors"
+    Me.Caption = "nexIRC - Themes/Colors"
     cboColorTheme.SetFocus
 Case 5
-    Me.Caption = "NexIRC - Text"
+    Me.Caption = "nexIRC - Text"
     lstString.SetFocus
 Case 6
-    Me.Caption = "NexIRC - About"
+    Me.Caption = "nexIRC - About"
     
 Case 7
-    Me.Caption = "NexIRC - Ignore"
+    Me.Caption = "nexIRC - Ignore"
     lstIgnore.SetFocus
 Case 8
-    Me.Caption = "NexIRC - Help"
+    Me.Caption = "nexIRC - Help"
     DisplayHelpInformation 25
     cboHelpTopic.SetFocus
 Case 9
-    Me.Caption = "NexIRC - Audio"
+    Me.Caption = "nexIRC - Audio"
     optEngine(1).SetFocus
 Case 10
-    Me.Caption = "NexIRC - Bots"
+    Me.Caption = "nexIRC - Bots"
     cboBotTypes.SetFocus
 End Select
 'Me.SetFocus
@@ -5933,12 +5887,12 @@ Private Sub txtEmail_MouseMove(Button As Integer, Shift As Integer, X As Single,
 'CreateBalloon "E-Mail", "Input your real e-mail address in this feild, you can not connect without it", txtEMail
 End Sub
 
-Private Sub txtHomepage_GotFocus()
-If lSettings.sHandleErrors = True Then On Local Error Resume Next
-txtHomepage.SelStart = 0
-txtHomepage.SelLength = Len(txtHomepage.Text)
-If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Private Sub txtHomepage_GotFocus()"
-End Sub
+'Private Sub txtHomepage_GotFocus()
+'If lSettings.sHandleErrors = True Then On Local Error Resume Next
+'txtHomepage.SelStart = 0
+'txtHomepage.SelLength = Len(txtHomepage.Text)
+'If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Private Sub txtHomepage_GotFocus()"
+'End Sub
 
 Private Sub txtIdentPort_GotFocus()
 If lSettings.sHandleErrors = True Then On Local Error Resume Next

@@ -205,8 +205,8 @@ Else
         lForm.tcp.SendData "QUIT:" & msg & vbCrLf
         ProcessReplaceString sQuitMessage, lForm.txtIncoming, msg
     Else
-        lForm.tcp.SendData "QUIT:NexIRC" & lForm.txtIncoming, vbCrLf
-        ProcessReplaceString sQuitMessage, lForm.txtIncoming, "NexIRC"
+        lForm.tcp.SendData "QUIT:nexIRC" & lForm.txtIncoming, vbCrLf
+        ProcessReplaceString sQuitMessage, lForm.txtIncoming, "nexIRC"
     End If
 End If
 If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Public Sub SendQuitMessage(lStatus As Integer)"
@@ -239,7 +239,7 @@ If Asc(Left(lUrl, 1)) = 39 Then lUrl = Right(lUrl, Len(lUrl) - 1)
 If Asc(Right(lUrl, 1)) = 39 Then lUrl = Left(lUrl, Len(lUrl) - 1)
 If Left(LCase(lUrl), 7) <> "http://" Then lUrl = "http://" & lUrl
 If lSettings.sGeneralPrompts = True Then
-    mbox = MsgBox("Would you like to navigate the url '" & lUrl & "'?", vbYesNo + vbQuestion, "NexIRC")
+    mbox = MsgBox("Would you like to navigate the url '" & lUrl & "'?", vbYesNo + vbQuestion, "nexIRC")
 Else
     mbox = vbYes
 End If
@@ -568,7 +568,7 @@ frmSplash.XP_ProgressBar1.Value = lValue
 '    frmSplash.prgLoading.Value = lValue
 '    If Len(lText) <> 0 Then
 '        If lValue = 1 Then
-'            frmSplash.txtLoading.Text = "• Loading NexIRC Options Please wait ..." & vbCrLf
+'            frmSplash.txtLoading.Text = "• Loading nexIRC Options Please wait ..." & vbCrLf
 '        Else
 '            frmSplash.lblLoading.Caption = "Loading: " & Format(lValue, " ##") & "%" & " (" & lText & ")": DoEvents
 '            If lValue <> 98 And lValue <> 99 Then
@@ -612,7 +612,7 @@ If Len(lFileName) <> 0 Then
         msg = ReadFile(lFileName)
     End If
     If Len(msg) <> 0 Then
-        'mdiNexIRC.ctlVBScript.ExecuteStatement msg
+        'mdinexIRC.ctlVBScript.ExecuteStatement msg
     End If
 End If
 If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Public Sub LoadScript(lFilename As String)"

@@ -428,7 +428,7 @@ End Sub
 Private Sub mnuAddBot_Click()
 If lSettings.sHandleErrors = True Then On Local Error Resume Next
 Dim msg As String
-'msg = mdiNexIRC.ActiveForm.lvwNames.SelectedItem.Text
+'msg = mdinexIRC.ActiveForm.lvwNames.SelectedItem.Text
 msg = mdiNexIRC.ActiveForm.ReturnSelectedItem()
 If Left(msg, 1) = "@" Or Left(msg, 1) = "+" Then
     msg = Right(msg, Len(msg) - 1)
@@ -455,13 +455,13 @@ End Sub
 
 Private Sub mnuAddIgnore_Click()
 If lSettings.sHandleErrors = True Then On Local Error Resume Next
-'If Len(Trim(mdiNexIRC.ActiveForm.lvwNames.SelectedItem.Text)) <> 0 Then AddToIgnore Trim(mdiNexIRC.ActiveForm.lvwNames.SelectedItem.Text)
+'If Len(Trim(mdinexIRC.ActiveForm.lvwNames.SelectedItem.Text)) <> 0 Then AddToIgnore Trim(mdinexIRC.ActiveForm.lvwNames.SelectedItem.Text)
 If Len(Trim(mdiNexIRC.ActiveForm.ReturnSelectedItem())) <> 0 Then AddToIgnore Trim(mdiNexIRC.ActiveForm.ReturnSelectedItem())
 'Dim i As Integer
-'If Len(mdiNexIRC.ActiveForm.lvwNames.SelectedItem.Text) <> 0 Then
+'If Len(mdinexIRC.ActiveForm.lvwNames.SelectedItem.Text) <> 0 Then
     
 '    lIgnore.iCount = ReturnIgnoreCount + 1
-'    lIgnore.iIgnore(i).iNickname = mdiNexIRC.ActiveForm.lvwNames.SelectedItem.Text
+'    lIgnore.iIgnore(i).iNickname = mdinexIRC.ActiveForm.lvwNames.SelectedItem.Text
 '    WriteINI lINIFiles.iIRC, "Ignore", "Count", Trim(Str(lIgnore.iCount))
 '    WriteINI lINIFiles.iIRC, "Ignore", Trim(Str(lIgnore.iCount)), lIgnore.iIgnore(i).iNickname
 'End If
@@ -471,7 +471,7 @@ End Sub
 Private Sub mnuAddNotify_Click()
 If lSettings.sHandleErrors = True Then On Local Error Resume Next
 Dim msg As String, i As Integer
-'msg = mdiNexIRC.ActiveForm.lvwNames.SelectedItem.Text
+'msg = mdinexIRC.ActiveForm.lvwNames.SelectedItem.Text
 msg = mdiNexIRC.ActiveForm.ReturnSelectedItem()
 If Len(msg) <> 0 Then i = AddNotify(msg)
 If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Private Sub mnuAddNotify_Click()"
@@ -514,7 +514,7 @@ End Sub
 Private Sub mnuBan_Click()
 If lSettings.sHandleErrors = True Then On Local Error Resume Next
 Dim msg As String
-'msg = mdiNexIRC.ActiveForm.lvwNames.SelectedItem.Text
+'msg = mdinexIRC.ActiveForm.lvwNames.SelectedItem.Text
 msg = mdiNexIRC.ActiveForm.ReturnSelectedItem()
 If Left(msg, 1) = "@" Or Left(msg, 1) = "+" Then
     msg = Right(msg, Len(msg) - 1)
@@ -532,7 +532,7 @@ Dim i As Integer
 For i = 8 To 48
     mnuBarIndex(i).Checked = False
 Next i
-'mdiNexIRC.ctlMP3OCX.Bands = Index
+'mdinexIRC.ctlMP3OCX.Bands = Index
 mnuBarIndex(Index).Checked = True
 If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Private Sub mnuBarIndex_Click(Index As Integer)"
 End Sub
@@ -875,7 +875,7 @@ ElseIf F = 1 Then
     PlayFile lFiles.fFile(FindFileIndex(frmPlaylist.lstPlaylist.Text)).fFilename
 Else
     If lSettings.sGeneralPrompts = True Then
-        MsgBox "NexIRC can only play one file at a time.", vbExclamation
+        MsgBox "nexIRC can only play one file at a time.", vbExclamation
     End If
 End If
 If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Private Sub mnuPlay1_Click()"

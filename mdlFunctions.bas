@@ -394,7 +394,7 @@ End Function
 Public Function PromptOpenScriptFile(lForm As Form) As String
 If lSettings.sHandleErrors = True Then On Local Error Resume Next
 Dim msg As String
-msg = OpenDialog(lForm, "Text Files (*.txt)|*.txt", "NexIRC", App.Path & "\data\scripts\nexirc")
+msg = OpenDialog(lForm, "Text Files (*.txt)|*.txt", "nexIRC", App.Path & "\data\scripts\nexirc")
 If Len(msg) <> 0 Then
     If DoesFileExist(msg) = True Then
         PromptOpenScriptFile = msg
@@ -435,7 +435,7 @@ If Len(lSettings.sNickname) = 0 Or Len(lSettings.sEMail) = 0 Then
 End If
 If Len(lServer) = 0 Or Len(lPort) = 0 Or lPort = "0" Then
     If Len(lServer) = 0 Then
-        lServer = InputBox("Enter server address:", "NexIRC", "")
+        lServer = InputBox("Enter server address:", "nexIRC", "")
         If Len(lServer) = 0 Then
             If lSettings.sGeneralPrompts = True Then
                 MsgBox "Unable to connect to server", vbExclamation
@@ -444,7 +444,7 @@ If Len(lServer) = 0 Or Len(lPort) = 0 Or lPort = "0" Then
         End If
     End If
     If Len(lPort) = 0 Or lPort = "0" Then
-        lPort = InputBox("Enter port:", "NexIRC", "6667")
+        lPort = InputBox("Enter port:", "nexIRC", "6667")
         If Len(lPort) = 0 Then
             If lSettings.sGeneralPrompts = True Then
                 MsgBox "Unable to connect to server", vbExclamation
@@ -468,7 +468,7 @@ If Err.Number = 91 Then
         '        NewStatusWindow lServer, lPort, True
         '        Exit Function
         '    Else
-        '        mdiNexIRC.picConnect.Picture = frmGraphics.picConnect1.Picture
+        '        mdinexIRC.picConnect.Picture = frmGraphics.picConnect1.Picture
         '        Exit Function
         '    End If
         'Else

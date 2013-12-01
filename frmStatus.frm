@@ -376,7 +376,7 @@ If KeyAscii = 13 Then
             If Len(lScriptFile) <> 0 Then
                 SaveFile lScriptFile, lScriptData
             Else
-                msg = InputBox("Enter Filename:", "NexIRC", "default.nirc")
+                msg = InputBox("Enter Filename:", "nexIRC", "default.nirc")
                 If Len(msg) <> 0 Then
                     lScriptFile = App.Path & "\data\scripts\" & msg
                     SaveFile lScriptFile, lScriptData
@@ -409,7 +409,7 @@ If KeyAscii = 13 Then
         If Len(lScriptData) <> 0 Then
             DoColorLines txtIncoming, lScriptData
         Else
-            'DoColor txtIncoming, "3NexIRC [14Version: " & App.major & "." & App.minor & "3]"
+            'DoColor txtIncoming, "3nexIRC [14Version: " & App.major & "." & App.minor & "3]"
             ProcessReplaceString sVersion, txtIncoming, App.Major, App.Minor
         End If
     Else

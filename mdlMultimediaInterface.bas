@@ -42,19 +42,19 @@ End Sub
 Public Sub DisplayPlaylists()
 If lSettings.sHandleErrors = True Then On Local Error Resume Next
 Dim i As Integer, m As Integer
-mdiNexIRC.file1.Path = App.Path & "\data\playlists\"
+mdiNexIRC.File1.Path = App.Path & "\data\playlists\"
 If (mdiNexIRC.mnuPlaylistCollection.Count - 1) <> 0 Then
     For i = 0 To mdiNexIRC.mnuPlaylistCollection.Count - 1
         If i <> 0 Then Unload mdiNexIRC.mnuPlaylistCollection(i)
     Next i
 End If
-For i = 0 To mdiNexIRC.file1.ListCount
-    If Len(mdiNexIRC.file1.List(i)) <> 0 Then
-        If Right(LCase(mdiNexIRC.file1.List(i)), 4) = ".m3u" Or Right(LCase(mdiNexIRC.file1.List(i)), 4) = ".ini" Then
+For i = 0 To mdiNexIRC.File1.ListCount
+    If Len(mdiNexIRC.File1.List(i)) <> 0 Then
+        If Right(LCase(mdiNexIRC.File1.List(i)), 4) = ".m3u" Or Right(LCase(mdiNexIRC.File1.List(i)), 4) = ".ini" Then
             m = m + 1
             Load mdiNexIRC.mnuPlaylistCollection(m)
             mdiNexIRC.mnuPlaylistCollection(m).Visible = True
-            mdiNexIRC.mnuPlaylistCollection(m).Caption = mdiNexIRC.file1.List(i)
+            mdiNexIRC.mnuPlaylistCollection(m).Caption = mdiNexIRC.File1.List(i)
         End If
     End If
 Next i
@@ -147,17 +147,17 @@ End Sub
 'lPlayback.pCurrentEngine = lType
 'Select Case lType
 'Case pMediaPlayer
-'    'For i = 1 To mdiNexIRC.Count
+'    'For i = 1 To mdinexIRC.Count
 '        'ActivateActiveFormResize
 '    'Next i
-'    With mdiNexIRC
+'    With mdinexIRC
 '        .picMP3OCX.Visible = False
 ''        .ctlMP3OCX.Visible = False
 '        .tmrPlaySoon.Enabled = False
 '        .tmrPlaySoon.interval = 0
 '    End With
 'Case pMp3
-'    With mdiNexIRC
+'    With mdinexIRC
 '        If lSettings.sAlwaysShowAudioSettings = True Then
 '            .picMP3OCX.Visible = True
 '        End If
@@ -297,11 +297,11 @@ Else
     Exit Function
 End If
 'Dim typeDevice As String, result, msg As String, msg2 As String
-'If GetStatusMultimedia(LCase(Trim(mdiNexIRC.lblMultimedia.Caption))) = "playing" Then
-'    StopMultimedia mdiNexIRC.lblMultimedia.Caption
-'    CloseMultimedia mdiNexIRC.lblMultimedia.Caption
+'If GetStatusMultimedia(LCase(Trim(mdinexIRC.lblMultimedia.Caption))) = "playing" Then
+'    StopMultimedia mdinexIRC.lblMultimedia.Caption
+'    CloseMultimedia mdinexIRC.lblMultimedia.Caption
 'End If
-'mdiNexIRC.lblMultimedia.Caption = Time$ & Date$ & GetRnd(10000)
+'mdinexIRC.lblMultimedia.Caption = Time$ & Date$ & GetRnd(10000)
 'If Right(LCase(lFileName), 4) = ".avi" Then
 '    If lSettings.sGeneralPrompts = True Then MsgBox "Format not supported"
 '    Exit Function
@@ -323,12 +323,12 @@ End If
 'Else
 '    typeDevice = "MPEGVideo"
 'End If
-''result = OpenMultimedia(frmVideo.fraVideo.hWnd, mdiNexIRC.lblMultimedia.Caption, lFilename, typeDevice)
-'result = OpenMultimedia(mdiNexIRC.hWnd, mdiNexIRC.lblMultimedia.Caption, lFileName, typeDevice)
+''result = OpenMultimedia(frmVideo.fraVideo.hWnd, mdinexIRC.lblMultimedia.Caption, lFilename, typeDevice)
+'result = OpenMultimedia(mdinexIRC.hWnd, mdinexIRC.lblMultimedia.Caption, lFileName, typeDevice)
 'If result = "Success" Then
 '    SwitchPlaybackEngine pMediaPlayer
 '    lPlayback.pPlaying = True
-'    msg = PlayMultimedia(mdiNexIRC.lblMultimedia.Caption, 0, GetTotalframes(mdiNexIRC.lblMultimedia.Caption))
+'    msg = PlayMultimedia(mdinexIRC.lblMultimedia.Caption, 0, GetTotalframes(mdinexIRC.lblMultimedia.Caption))
 '    lPlayback.pCurrentFile = lFileName
 '    msg = ""
 '    msg = lFileName
@@ -404,24 +404,24 @@ End Sub
 'Public Sub PlayMP3(lFileName As String)
 'Dim msg As String, i As Integer
 'If lPlayback.pCurrentEngine = pMp3 Then
-'    mdiNexIRC.tmrContinuousPlay.Enabled = False
-    'mdiNexIRC.ctlMP3OCX.Stop
+'    mdinexIRC.tmrContinuousPlay.Enabled = False
+    'mdinexIRC.ctlMP3OCX.Stop
 '    Select Case lSpectrumThemes.sSpectrumTheme(lSpectrumThemes.sIndex).sOscilloType
 '    Case 0
-'    '    mdiNexIRC.ctlMP3OCX.OscilloType = 0
+'    '    mdinexIRC.ctlMP3OCX.OscilloType = 0
 '    Case 1
-'    '    mdiNexIRC.ctlMP3OCX.OscilloType = 1
+'    '    mdinexIRC.ctlMP3OCX.OscilloType = 1
 '    Case 2
-'    '    mdiNexIRC.ctlMP3OCX.OscilloType = 2
+'    '    mdinexIRC.ctlMP3OCX.OscilloType = 2
 '    End Select
-'    'mdiNexIRC.ctlMP3OCX.Visible = True
+'    'mdinexIRC.ctlMP3OCX.Visible = True
 '    msg = lFileName
 '    msg = GetFileTitle(msg)
 '    lPlayback.pCurrentFile = msg
 '    lFiles.fIndex = FindFileIndexByFilename(msg)
 '    lSettings.sPlayNext = lFileName
-'    mdiNexIRC.tmrPlaySoon.interval = 1000
-'    mdiNexIRC.tmrPlaySoon.Enabled = True
+'    mdinexIRC.tmrPlaySoon.interval = 1000
+'    mdinexIRC.tmrPlaySoon.Enabled = True
 'End If
 'If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Public Sub PlayMP3(lFilename As String)"
 'End Sub
@@ -432,8 +432,8 @@ Dim msg As String, i As Integer
 If Len(lSettings.sPlayNext) <> 0 Then
     If DoesFileExist(lSettings.sPlayNext) = True Then
 '        Stop
-'        mdiNexIRC.ctlMP3OCX.Visible = True
-'        mdiNexIRC.ctlMP3OCX.Play lSettings.sPlayNext
+'        mdinexIRC.ctlMP3OCX.Visible = True
+'        mdinexIRC.ctlMP3OCX.Play lSettings.sPlayNext
 '        MsgBox lSettings.sPlayNext
 '        GetMP3Info lSettings.sPlayNext
         msg = lSettings.sPlayNext
@@ -469,13 +469,13 @@ End Function
 'Public Sub GetMP3Info(lFileName As String)
 'Dim msg As String
 'If Len(lFileName) <> 0 And DoesFileExist(lFileName) = True Then
-    'mdiNexIRC.ctlMP3OCX.GetFileInfo lFileName: DoEvents
-    'If Len(mdiNexIRC.ctlMP3OCX.Artist) <> 0 And Len(mdiNexIRC.ctlMP3OCX.Title) <> 0 Then
-        'mdiNexIRC.lblFilename2.Caption = mdiNexIRC.ctlMP3OCX.Artist & ": " & mdiNexIRC.ctlMP3OCX.Title
+    'mdinexIRC.ctlMP3OCX.GetFileInfo lFileName: DoEvents
+    'If Len(mdinexIRC.ctlMP3OCX.Artist) <> 0 And Len(mdinexIRC.ctlMP3OCX.Title) <> 0 Then
+        'mdinexIRC.lblFilename2.Caption = mdinexIRC.ctlMP3OCX.Artist & ": " & mdinexIRC.ctlMP3OCX.Title
 '    Else
 '        msg = lFileName
 '        msg = GetFileTitle(msg)
-'        mdiNexIRC.lblFilename2.Caption = msg
+'        mdinexIRC.lblFilename2.Caption = msg
 '    End If
 'End If
 'If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Public Sub GetMP3Info(lFilename As String)"
@@ -487,16 +487,16 @@ If lSettings.sHandleErrors = True Then On Local Error Resume Next
 frmPlayer.ctlMovieX1.PlayMovie
 'Select Case lPlayback.pCurrentEngine
 'Case pMediaPlayer
-'    PlayMultimedia mdiNexIRC.lblMultimedia.Caption, 0, GetTotalframes(mdiNexIRC.lblMultimedia.Caption)
+'    PlayMultimedia mdinexIRC.lblMultimedia.Caption, 0, GetTotalframes(mdinexIRC.lblMultimedia.Caption)
 'Case pMp3
-    'Select Case mdiNexIRC.ctlMP3OCX.PlayState
+    'Select Case mdinexIRC.ctlMP3OCX.PlayState
     'Case 0
-    '    mdiNexIRC.ctlMP3OCX.Play lFiles.fFile(lFiles.fIndex).fFilename
-    '    mdiNexIRC.ctlMP3OCX.Visible = True
+    '    mdinexIRC.ctlMP3OCX.Play lFiles.fFile(lFiles.fIndex).fFilename
+    '    mdinexIRC.ctlMP3OCX.Visible = True
 '    Case 1
 '        Exit Sub
 '    Case 2
-    '    mdiNexIRC.ctlMP3OCX.Pause
+    '    mdinexIRC.ctlMP3OCX.Pause
 '    End Select
 'End Select
 If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Public Sub MenuPlay()"
@@ -507,9 +507,9 @@ If lSettings.sHandleErrors = True Then On Local Error Resume Next
 frmPlayer.ctlMovieX1.PauseMovie
 'Select Case lPlayback.pCurrentEngine
 'Case pMp3
-'    'mdiNexIRC.ctlMP3OCX.Pause
+'    'mdinexIRC.ctlMP3OCX.Pause
 'Case pMediaPlayer
-'    PauseMultimedia mdiNexIRC.lblMultimedia.Caption
+'    PauseMultimedia mdinexIRC.lblMultimedia.Caption
 'End Select
 If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Public Sub MenuPause()"
 End Sub
@@ -519,9 +519,9 @@ If lSettings.sHandleErrors = True Then On Local Error Resume Next
 frmPlayer.ctlMovieX1.StopMovie
 'Select Case lPlayback.pCurrentEngine
 'Case pMp3
-'    'mdiNexIRC.ctlMP3OCX.Stop
+'    'mdinexIRC.ctlMP3OCX.Stop
 'Case pMediaPlayer
-'    StopMultimedia mdiNexIRC.lblMultimedia.Caption
+'    StopMultimedia mdinexIRC.lblMultimedia.Caption
 '    lPlayback.pPlaying = False
 'End Select
 If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Public Sub MenuStop()"

@@ -24,9 +24,9 @@ Private Type gButtons
     bScript(3) As StdPicture
     bScriptLeft As Integer
     bScriptTop As Integer
-    bNexIRC(3) As StdPicture
-    bNexIRCTop As Integer
-    bNexIRCLeft As Integer
+    bnexIRC(3) As StdPicture
+    bnexIRCTop As Integer
+    bnexIRCLeft As Integer
     bBackward(3) As StdPicture
     bBackwardTop As Integer
     bBackwardLeft As Integer
@@ -362,7 +362,7 @@ If i <> 0 Then
     If lSettings.sMOTDVisible = True Then
         frmMOTD.txtIncoming.SetBackColor lSpectrumThemes.sSpectrumTheme(i).sBackColor
     End If
-    'With mdiNexIRC.ctlMP3OCX
+    'With mdinexIRC.ctlMP3OCX
     '    .BackColor = lSpectrumThemes.sSpectrumTheme(i).sSpectrumBackcolor
     '    If Len(lSpectrumThemes.sSpectrumTheme(i).sBottomBandsColor) <> 0 Then .BottomBandsColor = lSpectrumThemes.sSpectrumTheme(i).sBottomBandsColor
     '    .DividerColor = lSpectrumThemes.sSpectrumTheme(i).sDividerColor
@@ -397,9 +397,9 @@ If i <> 0 Then
         frmGraphics.picAudio1.Picture = .bAudio(1)
         frmGraphics.picAudio2.Picture = .bAudio(2)
         frmGraphics.picAudio3.Picture = .bAudio(3)
-        frmGraphics.picNexIRC1.Picture = .bNexIRC(1)
-        frmGraphics.picNexIRC2.Picture = .bNexIRC(2)
-        frmGraphics.picNexIRC3.Picture = .bNexIRC(3)
+        frmGraphics.picNexIRC1.Picture = .bnexIRC(1)
+        frmGraphics.picNexIRC2.Picture = .bnexIRC(2)
+        frmGraphics.picNexIRC3.Picture = .bnexIRC(3)
         frmGraphics.picDisconnect1.Picture = .bDisconnect(1)
         frmGraphics.picDisconnect2.Picture = .bDisconnect(2)
         frmGraphics.picDisconnect3.Picture = .bDisconnect(3)
@@ -483,9 +483,9 @@ If i <> 0 Then
         mdiNexIRC.picScript.Left = .bScriptLeft
         mdiNexIRC.picScript.Top = .bScriptTop
         mdiNexIRC.picScript.Visible = True
-        mdiNexIRC.picNexIRC.Picture = .bNexIRC(1)
-        mdiNexIRC.picNexIRC.Left = .bNexIRCLeft
-        mdiNexIRC.picNexIRC.Top = .bNexIRCTop
+        mdiNexIRC.picNexIRC.Picture = .bnexIRC(1)
+        mdiNexIRC.picNexIRC.Left = .bnexIRCLeft
+        mdiNexIRC.picNexIRC.Top = .bnexIRCTop
         mdiNexIRC.picNexIRC.Visible = True
         mdiNexIRC.picExit.Picture = .bExit(1)
         mdiNexIRC.picExit.Left = .bExitLeft
@@ -496,10 +496,10 @@ If i <> 0 Then
     mdiNexIRC.txtUrl.Height = lSpectrumThemes.sSpectrumTheme(i).sURLHeight
     mdiNexIRC.txtUrl.Left = lSpectrumThemes.sSpectrumTheme(i).sURLLeft
     mdiNexIRC.txtUrl.Top = lSpectrumThemes.sSpectrumTheme(i).sURLTop
-    'mdiNexIRC.ctlMP3OCX.Left = lSpectrumThemes.sSpectrumTheme(i).sSpectrumLeft
-    'mdiNexIRC.ctlMP3OCX.Top = lSpectrumThemes.sSpectrumTheme(i).sSpectrumTop
-    'mdiNexIRC.ctlMP3OCX.Width = lSpectrumThemes.sSpectrumTheme(i).sSpectrumWidth
-    'mdiNexIRC.ctlMP3OCX.Height = lSpectrumThemes.sSpectrumTheme(i).sSpectrumHeight
+    'mdinexIRC.ctlMP3OCX.Left = lSpectrumThemes.sSpectrumTheme(i).sSpectrumLeft
+    'mdinexIRC.ctlMP3OCX.Top = lSpectrumThemes.sSpectrumTheme(i).sSpectrumTop
+    'mdinexIRC.ctlMP3OCX.Width = lSpectrumThemes.sSpectrumTheme(i).sSpectrumWidth
+    'mdinexIRC.ctlMP3OCX.Height = lSpectrumThemes.sSpectrumTheme(i).sSpectrumHeight
     SetPictureColors lSpectrumThemes.sSpectrumTheme(i).sRed, lSpectrumThemes.sSpectrumTheme(i).sBlue, lSpectrumThemes.sSpectrumTheme(i).sGreen
     If Len(lSpectrumThemes.sSpectrumTheme(i).sTextColor) <> 0 Then
         For F = 0 To 7
@@ -772,11 +772,11 @@ If lSpectrumThemes.sCount <> 0 Then
                 ApplyImageToPictureBox App.Path & "\data\images\" & ReadINI(GetINIFile(iSpectrum), Trim(Str(i)), "Audio1", ""), .sButtons.bAudio(1)
                 ApplyImageToPictureBox App.Path & "\data\images\" & ReadINI(GetINIFile(iSpectrum), Trim(Str(i)), "Audio2", ""), .sButtons.bAudio(2)
                 ApplyImageToPictureBox App.Path & "\data\images\" & ReadINI(GetINIFile(iSpectrum), Trim(Str(i)), "Audio3", ""), .sButtons.bAudio(3)
-                .sButtons.bNexIRCLeft = Int(ReadINI(GetINIFile(iSpectrum), Trim(Str(i)), "NexIRCLeft", -400))
-                .sButtons.bNexIRCTop = Int(ReadINI(GetINIFile(iSpectrum), Trim(Str(i)), "NexIRCTop", 0))
-                ApplyImageToPictureBox App.Path & "\data\images\" & ReadINI(GetINIFile(iSpectrum), Trim(Str(i)), "NexIRC1", ""), .sButtons.bNexIRC(1)
-                ApplyImageToPictureBox App.Path & "\data\images\" & ReadINI(GetINIFile(iSpectrum), Trim(Str(i)), "NexIRC2", ""), .sButtons.bNexIRC(2)
-                ApplyImageToPictureBox App.Path & "\data\images\" & ReadINI(GetINIFile(iSpectrum), Trim(Str(i)), "NexIRC3", ""), .sButtons.bNexIRC(3)
+                .sButtons.bnexIRCLeft = Int(ReadINI(GetINIFile(iSpectrum), Trim(Str(i)), "nexIRCLeft", -400))
+                .sButtons.bnexIRCTop = Int(ReadINI(GetINIFile(iSpectrum), Trim(Str(i)), "nexIRCTop", 0))
+                ApplyImageToPictureBox App.Path & "\data\images\" & ReadINI(GetINIFile(iSpectrum), Trim(Str(i)), "nexIRC1", ""), .sButtons.bnexIRC(1)
+                ApplyImageToPictureBox App.Path & "\data\images\" & ReadINI(GetINIFile(iSpectrum), Trim(Str(i)), "nexIRC2", ""), .sButtons.bnexIRC(2)
+                ApplyImageToPictureBox App.Path & "\data\images\" & ReadINI(GetINIFile(iSpectrum), Trim(Str(i)), "nexIRC3", ""), .sButtons.bnexIRC(3)
                 .sButtons.bScriptLeft = Int(ReadINI(GetINIFile(iSpectrum), Trim(Str(i)), "ScriptLeft", -400))
                 .sButtons.bScriptTop = Int(ReadINI(GetINIFile(iSpectrum), Trim(Str(i)), "ScriptTop", 0))
                 ApplyImageToPictureBox App.Path & "\data\images\" & ReadINI(GetINIFile(iSpectrum), Trim(Str(i)), "Script1", ""), .sButtons.bScript(1)

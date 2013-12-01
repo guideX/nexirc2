@@ -95,7 +95,7 @@ Public Function SetConnectionManagerCaption(lStatusCount As Integer)
 If lSettings.sHandleErrors = True Then On Local Error Resume Next
 Me.Tag = lStatusCount
 'lStatusWindows.sCount = lStatusCount
-Me.Caption = "NexIRC - Connection manager (" & lStatusCount & ") connection(s)"
+Me.Caption = "nexIRC - Connection manager (" & lStatusCount & ") connection(s)"
 If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Public Function SetConnectionManagerCaption(lStatusCount As Integer)"
 End Function
 

@@ -600,7 +600,7 @@ For i = 0 To lSections
     msg = ReadINI(lMenu, Trim(Str(i)), "MenuName", "")
     If LCase(msg) = LCase(lstMenu.Text) Then
         If lSettings.sGeneralPrompts = True Then
-            b = MsgBox("Are you sure you wish to remove " & msg, vbYesNo + vbQuestion, "NexIRC")
+            b = MsgBox("Are you sure you wish to remove " & msg, vbYesNo + vbQuestion, "nexIRC")
             If b = vbNo Then
                 Exit For
             End If

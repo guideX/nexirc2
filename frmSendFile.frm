@@ -1,6 +1,6 @@
 VERSION 5.00
 Object = "{248DD890-BB45-11CF-9ABC-0080C7E7B78D}#1.0#0"; "MSWINSCK.OCX"
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomctl.ocx"
 Begin VB.Form frmSendFile 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "NexIRC - DCC Send"
@@ -315,7 +315,7 @@ EndOfTrans:
 If ByteSent >= Val(FileLen(txtFileName.Text)) Then
     Close #i
     cmdCancel.Caption = "Close"
-    Me.Caption = "NexIRC - File Sent"
+    Me.Caption = "nexIRC - File Sent"
     lblPercent.Caption = ""
     Progress.Value = 0
 End If
@@ -355,7 +355,7 @@ lIP = IrcGetLongIP(lSettings.sActiveServerForm.tcp.LocalIP)
 txtFileName.Enabled = False
 txtNickname.Enabled = False
 If Len(lIP) <> 0 Then
-    Caption = "NexIRC - Sending"
+    Caption = "nexIRC - Sending"
     If lSettings.sActiveServerForm.tcp.State = sckConnected Then
         lSettings.sActiveServerForm.tcp.SendData "NOTICE " & txtNickname.Text & " :DCC SEND " & txtFileName.Text & "(" & tcpSend(Me.Tag).LocalIP & ")" & vbCrLf
         lSettings.sActiveServerForm.tcp.SendData "PRIVMSG " & txtNickname.Text & " :DCC SEND " & TempFileName & " " & lIP & " " & tcpSend(Me.Tag).LocalPort & " " & " " & FileLen(txtFileName.Text) & "" & vbCrLf
@@ -392,7 +392,7 @@ If lSettings.sHandleErrors = True Then On Local Error Resume Next
 If tcpSend(Me.Tag).State <> sckClosed Then tcpSend(Me.Tag).Close
 tcpSend(Me.Tag).Close
 tcpSend(Me.Tag).Accept requestID
-Me.Caption = "NexIRC - Connection Request"
+Me.Caption = "nexIRC - Connection Request"
 i = (Val(Me.Tag) - 1530)
 Open strFullPath For Binary Access Read As i
 bSize = 1024

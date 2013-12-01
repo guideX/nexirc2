@@ -32,7 +32,7 @@ Public Sub SetTime()
 If lSettings.sHandleErrors = True Then On Local Error Resume Next
 lAlarm.aDate = Date
 lAlarm.aTime = Time
-frmAlarm.Caption = "NexIRC - Alarm (" & Time & ")"
+frmAlarm.Caption = "nexIRC - Alarm (" & Time & ")"
 If Err.Number <> 0 Then ProcessRuntimeError Err.Description, Err.Number, "Public Sub SetTime()"
 End Sub
 
