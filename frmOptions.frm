@@ -2017,6 +2017,7 @@ Begin VB.Form frmCustomize
          _Version        =   393217
          BackColor       =   16777215
          BorderStyle     =   0
+         Enabled         =   -1  'True
          ReadOnly        =   -1  'True
          ScrollBars      =   2
          MousePointer    =   1
@@ -2351,7 +2352,7 @@ Begin VB.Form frmCustomize
       Visible         =   0   'False
       Width           =   6255
       Begin VB.Label Label7 
-         Caption         =   "http://www.team-nexgen.org"
+         Caption         =   "http://www.team-nexgen.com"
          BeginProperty Font 
             Name            =   "Tahoma"
             Size            =   8.25
@@ -2386,7 +2387,7 @@ Begin VB.Form frmCustomize
          Width           =   3525
       End
       Begin VB.Label Label2 
-         Caption         =   "©1996-2012 Team Nexgen"
+         Caption         =   "©1996-2016 Team Nexgen"
          Height          =   255
          Left            =   0
          TabIndex        =   126
@@ -2404,7 +2405,7 @@ Begin VB.Form frmCustomize
       End
       Begin VB.Label lblVersion 
          BackStyle       =   0  'Transparent
-         Caption         =   "Version: 2.0"
+         Caption         =   "Version: 2.30"
          Height          =   255
          Left            =   0
          TabIndex        =   127
